@@ -1,14 +1,10 @@
 import UIKit
 
-class HomeRouter: HomeRouterProtocol {
+class HomeWireFrame: HomeRouterProtocol {
     
     static func createHomeModule() -> UIViewController {
         let navController = mainStoryboard.instantiateViewController(withIdentifier:"HomeNavigationController")
-        if let view = navController.childViewControllers.first as? HomeView {
-            return navController
-        }
-        return UIViewController()
-
+        return navController
     }
 
     static var mainStoryboard: UIStoryboard {

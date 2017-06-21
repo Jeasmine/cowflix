@@ -13,10 +13,14 @@
 		80A43C6E1EF9E90F00C14F95 /* Cowflix.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 80A43C6C1EF9E90F00C14F95 /* Cowflix.xcdatamodeld */; };
 		80A43C701EF9E90F00C14F95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80A43C6F1EF9E90F00C14F95 /* Assets.xcassets */; };
 		80A43C731EF9E90F00C14F95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A43C711EF9E90F00C14F95 /* LaunchScreen.storyboard */; };
-		80A43C7F1EF9F6CA00C14F95 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A43C7E1EF9F6CA00C14F95 /* HomeRouter.swift */; };
+		80A43C7F1EF9F6CA00C14F95 /* HomeWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A43C7E1EF9F6CA00C14F95 /* HomeWireFrame.swift */; };
 		80A43C811EF9F75700C14F95 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A43C801EF9F75700C14F95 /* HomeProtocols.swift */; };
 		80A43C831EF9FB9C00C14F95 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A43C821EF9FB9C00C14F95 /* HomePresenter.swift */; };
 		80A43C8E1EF9FF6600C14F95 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A43C8D1EF9FF6600C14F95 /* HomeInteractor.swift */; };
+		80A43C991EFA0EE400C14F95 /* TabbarWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A43C981EFA0EE400C14F95 /* TabbarWireFrame.swift */; };
+		80A43C9B1EFA127B00C14F95 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A43C9A1EFA127B00C14F95 /* FavoriteView.swift */; };
+		80A43CA01EFA12F200C14F95 /* FavoriteProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A43C9F1EFA12F200C14F95 /* FavoriteProtocols.swift */; };
+		80A43CA21EFA144F00C14F95 /* FavoriteWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A43CA11EFA144F00C14F95 /* FavoriteWireFrame.swift */; };
 		A61F866887B3A1E101DA00DE /* Pods_Cowflix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B288CE51469C854589F032BC /* Pods_Cowflix.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,10 +34,14 @@
 		80A43C6F1EF9E90F00C14F95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80A43C721EF9E90F00C14F95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80A43C741EF9E90F00C14F95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		80A43C7E1EF9F6CA00C14F95 /* HomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		80A43C7E1EF9F6CA00C14F95 /* HomeWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeWireFrame.swift; sourceTree = "<group>"; };
 		80A43C801EF9F75700C14F95 /* HomeProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
 		80A43C821EF9FB9C00C14F95 /* HomePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		80A43C8D1EF9FF6600C14F95 /* HomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		80A43C981EFA0EE400C14F95 /* TabbarWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarWireFrame.swift; sourceTree = "<group>"; };
+		80A43C9A1EFA127B00C14F95 /* FavoriteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
+		80A43C9F1EFA12F200C14F95 /* FavoriteProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteProtocols.swift; sourceTree = "<group>"; };
+		80A43CA11EFA144F00C14F95 /* FavoriteWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteWireFrame.swift; sourceTree = "<group>"; };
 		B288CE51469C854589F032BC /* Pods_Cowflix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cowflix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD48644E7940AF76019000A /* Pods-Cowflix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cowflix.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cowflix/Pods-Cowflix.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,99 +79,127 @@
 		80A43C641EF9E90F00C14F95 /* Cowflix */ = {
 			isa = PBXGroup;
 			children = (
-				80A43C841EF9FD7D00C14F95 /* data */,
-				80A43C881EF9FDD700C14F95 /* interactor */,
-				80A43C7D1EF9F4D600C14F95 /* home */,
-				80A43C8C1EF9FF0400C14F95 /* storyboard */,
+				80A43C841EF9FD7D00C14F95 /* Data */,
+				80A43C881EF9FDD700C14F95 /* Interactor */,
+				80A43C9C1EFA128300C14F95 /* Favorites */,
+				80A43C7D1EF9F4D600C14F95 /* Home */,
+				80A43C981EFA0EE400C14F95 /* TabbarWireFrame.swift */,
+				80A43C8C1EF9FF0400C14F95 /* Storyboard */,
 				80A43C651EF9E90F00C14F95 /* AppDelegate.swift */,
 				80A43C741EF9E90F00C14F95 /* Info.plist */,
 			);
 			path = Cowflix;
 			sourceTree = "<group>";
 		};
-		80A43C7D1EF9F4D600C14F95 /* home */ = {
+		80A43C7D1EF9F4D600C14F95 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				80A43C8B1EF9FECF00C14F95 /* router */,
-				80A43C8A1EF9FDF900C14F95 /* view */,
-				80A43C891EF9FDF400C14F95 /* presenter */,
+				80A43C8B1EF9FECF00C14F95 /* WireFrame */,
+				80A43C8A1EF9FDF900C14F95 /* View */,
+				80A43C891EF9FDF400C14F95 /* Presenter */,
 				80A43C801EF9F75700C14F95 /* HomeProtocols.swift */,
 			);
-			name = home;
+			name = Home;
 			sourceTree = "<group>";
 		};
-		80A43C841EF9FD7D00C14F95 /* data */ = {
+		80A43C841EF9FD7D00C14F95 /* Data */ = {
 			isa = PBXGroup;
 			children = (
 				80A43C6C1EF9E90F00C14F95 /* Cowflix.xcdatamodeld */,
-				80A43C871EF9FDC700C14F95 /* repository */,
-				80A43C861EF9FDC100C14F95 /* network */,
-				80A43C851EF9FD8400C14F95 /* entities */,
+				80A43C871EF9FDC700C14F95 /* Repository */,
+				80A43C861EF9FDC100C14F95 /* Network */,
+				80A43C851EF9FD8400C14F95 /* Entities */,
 			);
-			name = data;
+			name = Data;
 			sourceTree = "<group>";
 		};
-		80A43C851EF9FD8400C14F95 /* entities */ = {
+		80A43C851EF9FD8400C14F95 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = entities;
+			name = Entities;
 			sourceTree = "<group>";
 		};
-		80A43C861EF9FDC100C14F95 /* network */ = {
+		80A43C861EF9FDC100C14F95 /* Network */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = network;
+			name = Network;
 			sourceTree = "<group>";
 		};
-		80A43C871EF9FDC700C14F95 /* repository */ = {
+		80A43C871EF9FDC700C14F95 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = repository;
+			name = Repository;
 			sourceTree = "<group>";
 		};
-		80A43C881EF9FDD700C14F95 /* interactor */ = {
+		80A43C881EF9FDD700C14F95 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
 				80A43C8D1EF9FF6600C14F95 /* HomeInteractor.swift */,
 			);
-			name = interactor;
+			name = Interactor;
 			sourceTree = "<group>";
 		};
-		80A43C891EF9FDF400C14F95 /* presenter */ = {
+		80A43C891EF9FDF400C14F95 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
 				80A43C821EF9FB9C00C14F95 /* HomePresenter.swift */,
 			);
-			name = presenter;
+			name = Presenter;
 			sourceTree = "<group>";
 		};
-		80A43C8A1EF9FDF900C14F95 /* view */ = {
+		80A43C8A1EF9FDF900C14F95 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				80A43C671EF9E90F00C14F95 /* HomeView.swift */,
 			);
-			name = view;
+			name = View;
 			sourceTree = "<group>";
 		};
-		80A43C8B1EF9FECF00C14F95 /* router */ = {
+		80A43C8B1EF9FECF00C14F95 /* WireFrame */ = {
 			isa = PBXGroup;
 			children = (
-				80A43C7E1EF9F6CA00C14F95 /* HomeRouter.swift */,
+				80A43C7E1EF9F6CA00C14F95 /* HomeWireFrame.swift */,
 			);
-			name = router;
+			name = WireFrame;
 			sourceTree = "<group>";
 		};
-		80A43C8C1EF9FF0400C14F95 /* storyboard */ = {
+		80A43C8C1EF9FF0400C14F95 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
 				80A43C6F1EF9E90F00C14F95 /* Assets.xcassets */,
 				80A43C691EF9E90F00C14F95 /* Main.storyboard */,
 				80A43C711EF9E90F00C14F95 /* LaunchScreen.storyboard */,
 			);
-			name = storyboard;
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		80A43C9C1EFA128300C14F95 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				80A43C9E1EFA12DC00C14F95 /* WireFrame */,
+				80A43C9D1EFA128E00C14F95 /* View */,
+				80A43C9F1EFA12F200C14F95 /* FavoriteProtocols.swift */,
+			);
+			name = Favorites;
+			sourceTree = "<group>";
+		};
+		80A43C9D1EFA128E00C14F95 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				80A43C9A1EFA127B00C14F95 /* FavoriteView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		80A43C9E1EFA12DC00C14F95 /* WireFrame */ = {
+			isa = PBXGroup;
+			children = (
+				80A43CA11EFA144F00C14F95 /* FavoriteWireFrame.swift */,
+			);
+			name = WireFrame;
 			sourceTree = "<group>";
 		};
 		AE583CC4DFCC8684F3987AC6 /* Frameworks */ = {
@@ -309,11 +345,15 @@
 			files = (
 				80A43C681EF9E90F00C14F95 /* HomeView.swift in Sources */,
 				80A43C811EF9F75700C14F95 /* HomeProtocols.swift in Sources */,
-				80A43C7F1EF9F6CA00C14F95 /* HomeRouter.swift in Sources */,
+				80A43CA21EFA144F00C14F95 /* FavoriteWireFrame.swift in Sources */,
+				80A43C7F1EF9F6CA00C14F95 /* HomeWireFrame.swift in Sources */,
 				80A43C831EF9FB9C00C14F95 /* HomePresenter.swift in Sources */,
 				80A43C6E1EF9E90F00C14F95 /* Cowflix.xcdatamodeld in Sources */,
 				80A43C661EF9E90F00C14F95 /* AppDelegate.swift in Sources */,
+				80A43C991EFA0EE400C14F95 /* TabbarWireFrame.swift in Sources */,
+				80A43CA01EFA12F200C14F95 /* FavoriteProtocols.swift in Sources */,
 				80A43C8E1EF9FF6600C14F95 /* HomeInteractor.swift in Sources */,
+				80A43C9B1EFA127B00C14F95 /* FavoriteView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

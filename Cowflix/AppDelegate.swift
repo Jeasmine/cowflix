@@ -8,10 +8,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        let module = HomeRouter.createHomeModule()
+        let tabbarController = TabbarWireFrame.createTabbar()
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = module
+        window?.rootViewController = tabbarController
         window?.makeKeyAndVisible()
         
         return true
