@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		80A43C661EF9E90F00C14F95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A43C651EF9E90F00C14F95 /* AppDelegate.swift */; };
-		80A43C681EF9E90F00C14F95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A43C671EF9E90F00C14F95 /* ViewController.swift */; };
+		80A43C681EF9E90F00C14F95 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A43C671EF9E90F00C14F95 /* HomeView.swift */; };
 		80A43C6B1EF9E90F00C14F95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A43C691EF9E90F00C14F95 /* Main.storyboard */; };
 		80A43C6E1EF9E90F00C14F95 /* Cowflix.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 80A43C6C1EF9E90F00C14F95 /* Cowflix.xcdatamodeld */; };
 		80A43C701EF9E90F00C14F95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80A43C6F1EF9E90F00C14F95 /* Assets.xcassets */; };
 		80A43C731EF9E90F00C14F95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A43C711EF9E90F00C14F95 /* LaunchScreen.storyboard */; };
+		80A43C7F1EF9F6CA00C14F95 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A43C7E1EF9F6CA00C14F95 /* HomeRouter.swift */; };
+		80A43C811EF9F75700C14F95 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A43C801EF9F75700C14F95 /* HomeProtocols.swift */; };
+		80A43C831EF9FB9C00C14F95 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A43C821EF9FB9C00C14F95 /* HomePresenter.swift */; };
+		80A43C8E1EF9FF6600C14F95 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A43C8D1EF9FF6600C14F95 /* HomeInteractor.swift */; };
 		A61F866887B3A1E101DA00DE /* Pods_Cowflix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B288CE51469C854589F032BC /* Pods_Cowflix.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,12 +24,16 @@
 		6969A5795E23C4BD0869C858 /* Pods-Cowflix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cowflix.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cowflix/Pods-Cowflix.release.xcconfig"; sourceTree = "<group>"; };
 		80A43C621EF9E90F00C14F95 /* Cowflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cowflix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80A43C651EF9E90F00C14F95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		80A43C671EF9E90F00C14F95 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		80A43C671EF9E90F00C14F95 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		80A43C6A1EF9E90F00C14F95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		80A43C6D1EF9E90F00C14F95 /* Cowflix.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cowflix.xcdatamodel; sourceTree = "<group>"; };
 		80A43C6F1EF9E90F00C14F95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80A43C721EF9E90F00C14F95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80A43C741EF9E90F00C14F95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80A43C7E1EF9F6CA00C14F95 /* HomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		80A43C801EF9F75700C14F95 /* HomeProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
+		80A43C821EF9FB9C00C14F95 /* HomePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		80A43C8D1EF9FF6600C14F95 /* HomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		B288CE51469C854589F032BC /* Pods_Cowflix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cowflix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD48644E7940AF76019000A /* Pods-Cowflix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cowflix.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cowflix/Pods-Cowflix.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,15 +71,99 @@
 		80A43C641EF9E90F00C14F95 /* Cowflix */ = {
 			isa = PBXGroup;
 			children = (
+				80A43C841EF9FD7D00C14F95 /* data */,
+				80A43C881EF9FDD700C14F95 /* interactor */,
+				80A43C7D1EF9F4D600C14F95 /* home */,
+				80A43C8C1EF9FF0400C14F95 /* storyboard */,
 				80A43C651EF9E90F00C14F95 /* AppDelegate.swift */,
-				80A43C671EF9E90F00C14F95 /* ViewController.swift */,
-				80A43C691EF9E90F00C14F95 /* Main.storyboard */,
-				80A43C6F1EF9E90F00C14F95 /* Assets.xcassets */,
-				80A43C711EF9E90F00C14F95 /* LaunchScreen.storyboard */,
 				80A43C741EF9E90F00C14F95 /* Info.plist */,
-				80A43C6C1EF9E90F00C14F95 /* Cowflix.xcdatamodeld */,
 			);
 			path = Cowflix;
+			sourceTree = "<group>";
+		};
+		80A43C7D1EF9F4D600C14F95 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				80A43C8B1EF9FECF00C14F95 /* router */,
+				80A43C8A1EF9FDF900C14F95 /* view */,
+				80A43C891EF9FDF400C14F95 /* presenter */,
+				80A43C801EF9F75700C14F95 /* HomeProtocols.swift */,
+			);
+			name = home;
+			sourceTree = "<group>";
+		};
+		80A43C841EF9FD7D00C14F95 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				80A43C6C1EF9E90F00C14F95 /* Cowflix.xcdatamodeld */,
+				80A43C871EF9FDC700C14F95 /* repository */,
+				80A43C861EF9FDC100C14F95 /* network */,
+				80A43C851EF9FD8400C14F95 /* entities */,
+			);
+			name = data;
+			sourceTree = "<group>";
+		};
+		80A43C851EF9FD8400C14F95 /* entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = entities;
+			sourceTree = "<group>";
+		};
+		80A43C861EF9FDC100C14F95 /* network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = network;
+			sourceTree = "<group>";
+		};
+		80A43C871EF9FDC700C14F95 /* repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = repository;
+			sourceTree = "<group>";
+		};
+		80A43C881EF9FDD700C14F95 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				80A43C8D1EF9FF6600C14F95 /* HomeInteractor.swift */,
+			);
+			name = interactor;
+			sourceTree = "<group>";
+		};
+		80A43C891EF9FDF400C14F95 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				80A43C821EF9FB9C00C14F95 /* HomePresenter.swift */,
+			);
+			name = presenter;
+			sourceTree = "<group>";
+		};
+		80A43C8A1EF9FDF900C14F95 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				80A43C671EF9E90F00C14F95 /* HomeView.swift */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		80A43C8B1EF9FECF00C14F95 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				80A43C7E1EF9F6CA00C14F95 /* HomeRouter.swift */,
+			);
+			name = router;
+			sourceTree = "<group>";
+		};
+		80A43C8C1EF9FF0400C14F95 /* storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				80A43C6F1EF9E90F00C14F95 /* Assets.xcassets */,
+				80A43C691EF9E90F00C14F95 /* Main.storyboard */,
+				80A43C711EF9E90F00C14F95 /* LaunchScreen.storyboard */,
+			);
+			name = storyboard;
 			sourceTree = "<group>";
 		};
 		AE583CC4DFCC8684F3987AC6 /* Frameworks */ = {
@@ -215,9 +307,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80A43C681EF9E90F00C14F95 /* ViewController.swift in Sources */,
+				80A43C681EF9E90F00C14F95 /* HomeView.swift in Sources */,
+				80A43C811EF9F75700C14F95 /* HomeProtocols.swift in Sources */,
+				80A43C7F1EF9F6CA00C14F95 /* HomeRouter.swift in Sources */,
+				80A43C831EF9FB9C00C14F95 /* HomePresenter.swift in Sources */,
 				80A43C6E1EF9E90F00C14F95 /* Cowflix.xcdatamodeld in Sources */,
 				80A43C661EF9E90F00C14F95 /* AppDelegate.swift in Sources */,
+				80A43C8E1EF9FF6600C14F95 /* HomeInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +479,7 @@
 				80A43C791EF9E90F00C14F95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  Cowflix
-//
-//  Created by Jeasmine Ñahui on 6/20/17.
-//  Copyright © 2017 workshop. All rights reserved.
-//
-
 import UIKit
 import CoreData
 
@@ -14,9 +6,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let module = HomeRouter.createHomeModule()
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = module
+        window?.makeKeyAndVisible()
+        
         return true
     }
 
