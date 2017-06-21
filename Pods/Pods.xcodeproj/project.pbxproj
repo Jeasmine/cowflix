@@ -1,0 +1,933 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06B6CBF473048BFBC8A4C73E9FA8E273 /* PassthroughView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7E0C05B701CB78CE5F565D1E1559EA /* PassthroughView.swift */; };
+		08482F6C541928D58DF9D3684B14F05C /* TabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3241EDEF073C873BD67419EF56D400FE /* TabView.xib */; };
+		11896F2D3855B07D0BFF58A44CB0481E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		14612DCCA082A7D5E3A9D6EEC065CBD0 /* Array+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4019DADB7B8DE953C89ABF1886B18D8F /* Array+Utils.swift */; };
+		20A943713273EB372A9F170791A8EEB5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CBFCEFA474B720D6F5C71DC8A34A70D /* Images.xcassets */; };
+		25221E951968483CD88A9340810186B0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		34B857CE33ABBE908927202FF12CBB02 /* SwiftMessages-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BE1B0A96F6F290DC8B1FAD70AB75AA1E /* SwiftMessages-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4568C6CC7F78399CA1312B20E26EA8FE /* UIScrollView+EmptyDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFDA29A5CF7824E7368186A16A99230 /* UIScrollView+EmptyDataSet.m */; };
+		4A978ED97D8022A9054B66035419F8F2 /* MarginAdjustable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647EADF4842E5E1CBD16DCC8FD0B0173 /* MarginAdjustable.swift */; };
+		4C144355E41C99902528AAD3CF069680 /* DZNEmptyDataSet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 222E1D3E82E56C947BA9752143F91A40 /* DZNEmptyDataSet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D2F69B9E7096FBF4FD0F76F5266BEC1 /* PassthroughWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1E368F281A4CE53234DDDD65752F93 /* PassthroughWindow.swift */; };
+		4E60F564C2D7064C555F393DAE22D4AC /* SwiftMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD3BA3362B890200102B51572DA322E /* SwiftMessages.swift */; };
+		55376F43EF24B7254639BD3D930262A0 /* NSBundle+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D0F1727AEB356D403C8443F57EC9C7 /* NSBundle+Utils.swift */; };
+		58E7F733C9DED1869F774F2C8F5C0735 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF926DA9AD1A605B199328719A221B7 /* BaseView.swift */; };
+		591409D7A4DFD531B5C298ECD3EDEDA0 /* Pods-Cowflix-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC2DEAAD25375E488A99DD00B25571C /* Pods-Cowflix-dummy.m */; };
+		5B09A66B1A9FF939F632B33A37DAD204 /* BackgroundViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D60A7CAB1F251C2051720A23B20AF6 /* BackgroundViewable.swift */; };
+		718314801181FFD638FAD6CEFE50C30D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		75D0A461B8CF202F41C55CA1E732124C /* DZNEmptyDataSet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC5AA620B58C8620BCFC72ADE8AFCB6 /* DZNEmptyDataSet-dummy.m */; };
+		7607DA04D366A5488262BB1C239D9A61 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1DB39CCD79D4B3B5E7E797E94F1814 /* Presenter.swift */; };
+		8418F8F71B73859318519A1316330410 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D53FB07AF20A844DAF5A2DAF217B3C /* MessageView.swift */; };
+		8511E9645F5C2B18746B4B4B29284451 /* UIScrollView+EmptyDataSet.h in Headers */ = {isa = PBXBuildFile; fileRef = F60A0E8A9DD7D31551A68626B96E3E10 /* UIScrollView+EmptyDataSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		892EA25FA8BE69621EEC9040B8166B59 /* SwiftMessages.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 545FDE47FE54E35E6883A333C80E6B18 /* SwiftMessages.bundle */; };
+		8E31EF89BD192C6AACDE9E0655861D3D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		91056635BE51B668C6D8389FDE40C9AD /* MessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45E177267A90DAC085C61C3DDA8749DE /* MessageView.xib */; };
+		95400561A21F9A723103EF035D81CDD9 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872E00AFC3E4BA258C5AD5C49BB2CA7E /* UIViewController+Utils.swift */; };
+		9730BB22CC82CDB50B68DED6E2A5B488 /* WindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C34BAB67C991F1B032F9418B8A1D01 /* WindowViewController.swift */; };
+		ACB3A58A82D3B2384AF9F385E405F752 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142677AF1BF61E1610CFC957D3C56C9E /* Identifiable.swift */; };
+		B266A2386A313D8EE9F702BF9CC171C0 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2B6DCC3BB04FB6F6217D4346F7B37F /* Error.swift */; };
+		BB3DD3DE41C5348E0065ABC95D74717C /* StatusLine.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45692090C77AE2235201E96B61E339F1 /* StatusLine.xib */; };
+		C577B322B52228B272D52FF32B7BE30C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		D5D61221EE9B0FE5B0F70CFFC21315C3 /* SwiftMessages-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC3D7D10EF2B687812C65CFD46A18C3 /* SwiftMessages-dummy.m */; };
+		D684CEFA1428AA39E2B73E48EEF7D98C /* Pods-Cowflix-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FE20F6164CCFABED6B1CF1AB6CC46EC /* Pods-Cowflix-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3FD9E59F83FF48FDCA98BA2CE44D3A1 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A1AA393F49C7745D04E1DD1F722F69E /* CardView.xib */; };
+		ED6C0EAA42267E5420894AF43D129BA9 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E942EFAEDBC43D8C77947614504E52 /* Theme.swift */; };
+		F71A034DF2F131EADC7CD49EB22E0504 /* MessageViewIOS8.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B6CB6F219037649BCCB7F5B2AFB0E88 /* MessageViewIOS8.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		086148296AF52E84D5542775CF025F91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E17CD25196C2A70EF34ED0137A701DC6;
+			remoteInfo = SwiftMessages;
+		};
+		6169F0E3B33BBEE0445EC2BD7840E0D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8694E82E9080AB82E2FD5FC66351B6B0;
+			remoteInfo = "SwiftMessages-SwiftMessages";
+		};
+		F6FC5DE5F9EA199DC0BED28AA16961D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D386C75EFD4F03725E4EFB866B600B9A;
+			remoteInfo = DZNEmptyDataSet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05D0F1727AEB356D403C8443F57EC9C7 /* NSBundle+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSBundle+Utils.swift"; path = "SwiftMessages/NSBundle+Utils.swift"; sourceTree = "<group>"; };
+		1253517D9B911C7C07A0EA042CAC5194 /* Pods-Cowflix-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Cowflix-frameworks.sh"; sourceTree = "<group>"; };
+		12E942EFAEDBC43D8C77947614504E52 /* Theme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Theme.swift; path = SwiftMessages/Theme.swift; sourceTree = "<group>"; };
+		142677AF1BF61E1610CFC957D3C56C9E /* Identifiable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Identifiable.swift; path = SwiftMessages/Identifiable.swift; sourceTree = "<group>"; };
+		222E1D3E82E56C947BA9752143F91A40 /* DZNEmptyDataSet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DZNEmptyDataSet-umbrella.h"; sourceTree = "<group>"; };
+		2CBFCEFA474B720D6F5C71DC8A34A70D /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = SwiftMessages/Resources/Images.xcassets; sourceTree = "<group>"; };
+		2CC3D7D10EF2B687812C65CFD46A18C3 /* SwiftMessages-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftMessages-dummy.m"; sourceTree = "<group>"; };
+		2EDC0DBAA6A0ECCD491BC1B0AF48885C /* DZNEmptyDataSet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DZNEmptyDataSet.xcconfig; sourceTree = "<group>"; };
+		2FE20F6164CCFABED6B1CF1AB6CC46EC /* Pods-Cowflix-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Cowflix-umbrella.h"; sourceTree = "<group>"; };
+		3241EDEF073C873BD67419EF56D400FE /* TabView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = TabView.xib; path = SwiftMessages/Resources/TabView.xib; sourceTree = "<group>"; };
+		39F3E0F8DD1C293D64ABEA74FB1CABE7 /* Pods-Cowflix-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Cowflix-acknowledgements.plist"; sourceTree = "<group>"; };
+		3A1F1690E2D9180AA71A906334F18FFA /* SwiftMessages.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftMessages.xcconfig; sourceTree = "<group>"; };
+		4019DADB7B8DE953C89ABF1886B18D8F /* Array+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Utils.swift"; path = "SwiftMessages/Array+Utils.swift"; sourceTree = "<group>"; };
+		44D53FB07AF20A844DAF5A2DAF217B3C /* MessageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageView.swift; path = SwiftMessages/MessageView.swift; sourceTree = "<group>"; };
+		45692090C77AE2235201E96B61E339F1 /* StatusLine.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = StatusLine.xib; path = SwiftMessages/Resources/StatusLine.xib; sourceTree = "<group>"; };
+		45E177267A90DAC085C61C3DDA8749DE /* MessageView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = MessageView.xib; path = SwiftMessages/Resources/MessageView.xib; sourceTree = "<group>"; };
+		4B7E0C05B701CB78CE5F565D1E1559EA /* PassthroughView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PassthroughView.swift; path = SwiftMessages/PassthroughView.swift; sourceTree = "<group>"; };
+		4C36EABC3CEA703E8234E0767CFB6A02 /* DZNEmptyDataSet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DZNEmptyDataSet.framework; path = DZNEmptyDataSet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		505CC4797990D755AC2332E6FCEA1E70 /* Pods-Cowflix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cowflix.debug.xcconfig"; sourceTree = "<group>"; };
+		545FDE47FE54E35E6883A333C80E6B18 /* SwiftMessages.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = SwiftMessages.bundle; path = SwiftMessages.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		5508FF0BAB1652DC22713EC33131D1C6 /* ResourceBundle-SwiftMessages-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SwiftMessages-Info.plist"; sourceTree = "<group>"; };
+		647EADF4842E5E1CBD16DCC8FD0B0173 /* MarginAdjustable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MarginAdjustable.swift; path = SwiftMessages/MarginAdjustable.swift; sourceTree = "<group>"; };
+		64C34BAB67C991F1B032F9418B8A1D01 /* WindowViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WindowViewController.swift; path = SwiftMessages/WindowViewController.swift; sourceTree = "<group>"; };
+		69DDC24EE4671E37BD3C030C81AAE153 /* SwiftMessages.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftMessages.framework; path = SwiftMessages.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A1AA393F49C7745D04E1DD1F722F69E /* CardView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = CardView.xib; path = SwiftMessages/Resources/CardView.xib; sourceTree = "<group>"; };
+		6B6CB6F219037649BCCB7F5B2AFB0E88 /* MessageViewIOS8.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = MessageViewIOS8.xib; path = SwiftMessages/Resources/MessageViewIOS8.xib; sourceTree = "<group>"; };
+		6B8377CBF6D24C4557D05D5A11CE6261 /* Pods-Cowflix.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Cowflix.modulemap"; sourceTree = "<group>"; };
+		6CD3BA3362B890200102B51572DA322E /* SwiftMessages.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftMessages.swift; path = SwiftMessages/SwiftMessages.swift; sourceTree = "<group>"; };
+		6EC3CA72FDD7CBC6CAD7367A67EA94F8 /* DZNEmptyDataSet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DZNEmptyDataSet-prefix.pch"; sourceTree = "<group>"; };
+		7FD5EA2B7A510C826E5FC7D41A0DC418 /* DZNEmptyDataSet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = DZNEmptyDataSet.modulemap; sourceTree = "<group>"; };
+		855AC83B9A2CE59FBD47F575BBD13B9B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		872E00AFC3E4BA258C5AD5C49BB2CA7E /* UIViewController+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Utils.swift"; path = "SwiftMessages/UIViewController+Utils.swift"; sourceTree = "<group>"; };
+		899D39AD8A44C861A8D8D02028DB6793 /* Pods-Cowflix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cowflix.release.xcconfig"; sourceTree = "<group>"; };
+		8D49621039C70EAD35B128591FFFD2B5 /* SwiftMessages.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftMessages.modulemap; sourceTree = "<group>"; };
+		8EC5AA620B58C8620BCFC72ADE8AFCB6 /* DZNEmptyDataSet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DZNEmptyDataSet-dummy.m"; sourceTree = "<group>"; };
+		912A91ADD5FD5BEA6F4D6BC07DEC918D /* Pods_Cowflix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Cowflix.framework; path = "Pods-Cowflix.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A669026843D4EDAA9EB6E43FD6D74314 /* Pods-Cowflix-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Cowflix-resources.sh"; sourceTree = "<group>"; };
+		AFFDA29A5CF7824E7368186A16A99230 /* UIScrollView+EmptyDataSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+EmptyDataSet.m"; path = "Source/UIScrollView+EmptyDataSet.m"; sourceTree = "<group>"; };
+		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		BB1E368F281A4CE53234DDDD65752F93 /* PassthroughWindow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PassthroughWindow.swift; path = SwiftMessages/PassthroughWindow.swift; sourceTree = "<group>"; };
+		BC91851B8D7975BB063EA6993CCEF468 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE1B0A96F6F290DC8B1FAD70AB75AA1E /* SwiftMessages-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftMessages-umbrella.h"; sourceTree = "<group>"; };
+		C3D60A7CAB1F251C2051720A23B20AF6 /* BackgroundViewable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BackgroundViewable.swift; path = SwiftMessages/BackgroundViewable.swift; sourceTree = "<group>"; };
+		CA1DB39CCD79D4B3B5E7E797E94F1814 /* Presenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Presenter.swift; path = SwiftMessages/Presenter.swift; sourceTree = "<group>"; };
+		CAC2DEAAD25375E488A99DD00B25571C /* Pods-Cowflix-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Cowflix-dummy.m"; sourceTree = "<group>"; };
+		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E5CD4468C45A3AC1A9E391DCC71FBA3D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECF926DA9AD1A605B199328719A221B7 /* BaseView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseView.swift; path = SwiftMessages/BaseView.swift; sourceTree = "<group>"; };
+		EE03A15D93FD72CCA9F92E6BFB430245 /* Pods-Cowflix-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Cowflix-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F493ED0F367CF193CCF4F8984524127D /* SwiftMessages-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftMessages-prefix.pch"; sourceTree = "<group>"; };
+		F60A0E8A9DD7D31551A68626B96E3E10 /* UIScrollView+EmptyDataSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+EmptyDataSet.h"; path = "Source/UIScrollView+EmptyDataSet.h"; sourceTree = "<group>"; };
+		FF2B6DCC3BB04FB6F6217D4346F7B37F /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = SwiftMessages/Error.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		59E0885EF9D269547F22DB9E026FB793 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C577B322B52228B272D52FF32B7BE30C /* Foundation.framework in Frameworks */,
+				8E31EF89BD192C6AACDE9E0655861D3D /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EAA415C68BB6A6C0783507EF674FAB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				718314801181FFD638FAD6CEFE50C30D /* Foundation.framework in Frameworks */,
+				25221E951968483CD88A9340810186B0 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9648FB912AF4F0E72338350572F169F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11896F2D3855B07D0BFF58A44CB0481E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCD31FD7E2A2229184EF7B9DB849A8C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E776645CD36DBE123C6C776ADC6F4C4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6A1AA393F49C7745D04E1DD1F722F69E /* CardView.xib */,
+				2CBFCEFA474B720D6F5C71DC8A34A70D /* Images.xcassets */,
+				45E177267A90DAC085C61C3DDA8749DE /* MessageView.xib */,
+				6B6CB6F219037649BCCB7F5B2AFB0E88 /* MessageViewIOS8.xib */,
+				45692090C77AE2235201E96B61E339F1 /* StatusLine.xib */,
+				3241EDEF073C873BD67419EF56D400FE /* TabView.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		16C89574D664C40D8E5AB97AD4F2DB52 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				855AC83B9A2CE59FBD47F575BBD13B9B /* Info.plist */,
+				5508FF0BAB1652DC22713EC33131D1C6 /* ResourceBundle-SwiftMessages-Info.plist */,
+				8D49621039C70EAD35B128591FFFD2B5 /* SwiftMessages.modulemap */,
+				3A1F1690E2D9180AA71A906334F18FFA /* SwiftMessages.xcconfig */,
+				2CC3D7D10EF2B687812C65CFD46A18C3 /* SwiftMessages-dummy.m */,
+				F493ED0F367CF193CCF4F8984524127D /* SwiftMessages-prefix.pch */,
+				BE1B0A96F6F290DC8B1FAD70AB75AA1E /* SwiftMessages-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftMessages";
+			sourceTree = "<group>";
+		};
+		293F837BCA172A8AE908CA0AB73F55C8 /* SwiftMessages */ = {
+			isa = PBXGroup;
+			children = (
+				4019DADB7B8DE953C89ABF1886B18D8F /* Array+Utils.swift */,
+				C3D60A7CAB1F251C2051720A23B20AF6 /* BackgroundViewable.swift */,
+				ECF926DA9AD1A605B199328719A221B7 /* BaseView.swift */,
+				FF2B6DCC3BB04FB6F6217D4346F7B37F /* Error.swift */,
+				142677AF1BF61E1610CFC957D3C56C9E /* Identifiable.swift */,
+				647EADF4842E5E1CBD16DCC8FD0B0173 /* MarginAdjustable.swift */,
+				44D53FB07AF20A844DAF5A2DAF217B3C /* MessageView.swift */,
+				05D0F1727AEB356D403C8443F57EC9C7 /* NSBundle+Utils.swift */,
+				4B7E0C05B701CB78CE5F565D1E1559EA /* PassthroughView.swift */,
+				BB1E368F281A4CE53234DDDD65752F93 /* PassthroughWindow.swift */,
+				CA1DB39CCD79D4B3B5E7E797E94F1814 /* Presenter.swift */,
+				6CD3BA3362B890200102B51572DA322E /* SwiftMessages.swift */,
+				12E942EFAEDBC43D8C77947614504E52 /* Theme.swift */,
+				872E00AFC3E4BA258C5AD5C49BB2CA7E /* UIViewController+Utils.swift */,
+				64C34BAB67C991F1B032F9418B8A1D01 /* WindowViewController.swift */,
+				0E776645CD36DBE123C6C776ADC6F4C4 /* Resources */,
+				16C89574D664C40D8E5AB97AD4F2DB52 /* Support Files */,
+			);
+			name = SwiftMessages;
+			path = SwiftMessages;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				438B396F6B4147076630CAEFE34282C1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
+				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		4A12D3BCEBFB5E60D1E1CE54F25C37EF /* Pods-Cowflix */ = {
+			isa = PBXGroup;
+			children = (
+				BC91851B8D7975BB063EA6993CCEF468 /* Info.plist */,
+				6B8377CBF6D24C4557D05D5A11CE6261 /* Pods-Cowflix.modulemap */,
+				EE03A15D93FD72CCA9F92E6BFB430245 /* Pods-Cowflix-acknowledgements.markdown */,
+				39F3E0F8DD1C293D64ABEA74FB1CABE7 /* Pods-Cowflix-acknowledgements.plist */,
+				CAC2DEAAD25375E488A99DD00B25571C /* Pods-Cowflix-dummy.m */,
+				1253517D9B911C7C07A0EA042CAC5194 /* Pods-Cowflix-frameworks.sh */,
+				A669026843D4EDAA9EB6E43FD6D74314 /* Pods-Cowflix-resources.sh */,
+				2FE20F6164CCFABED6B1CF1AB6CC46EC /* Pods-Cowflix-umbrella.h */,
+				505CC4797990D755AC2332E6FCEA1E70 /* Pods-Cowflix.debug.xcconfig */,
+				899D39AD8A44C861A8D8D02028DB6793 /* Pods-Cowflix.release.xcconfig */,
+			);
+			name = "Pods-Cowflix";
+			path = "Target Support Files/Pods-Cowflix";
+			sourceTree = "<group>";
+		};
+		506C6ECB4CFBDC57C01A8848BCECE7F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C36EABC3CEA703E8234E0767CFB6A02 /* DZNEmptyDataSet.framework */,
+				912A91ADD5FD5BEA6F4D6BC07DEC918D /* Pods_Cowflix.framework */,
+				545FDE47FE54E35E6883A333C80E6B18 /* SwiftMessages.bundle */,
+				69DDC24EE4671E37BD3C030C81AAE153 /* SwiftMessages.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50FC8EAF62A53CB6F71A6AD194E2F430 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7FD5EA2B7A510C826E5FC7D41A0DC418 /* DZNEmptyDataSet.modulemap */,
+				2EDC0DBAA6A0ECCD491BC1B0AF48885C /* DZNEmptyDataSet.xcconfig */,
+				8EC5AA620B58C8620BCFC72ADE8AFCB6 /* DZNEmptyDataSet-dummy.m */,
+				6EC3CA72FDD7CBC6CAD7367A67EA94F8 /* DZNEmptyDataSet-prefix.pch */,
+				222E1D3E82E56C947BA9752143F91A40 /* DZNEmptyDataSet-umbrella.h */,
+				E5CD4468C45A3AC1A9E391DCC71FBA3D /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DZNEmptyDataSet";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				9B4B2172DB9A36131EAE32C5092BF76E /* Pods */,
+				506C6ECB4CFBDC57C01A8848BCECE7F0 /* Products */,
+				8E642B2BB3186DEB31F7240871F20238 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8E642B2BB3186DEB31F7240871F20238 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4A12D3BCEBFB5E60D1E1CE54F25C37EF /* Pods-Cowflix */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9B4B2172DB9A36131EAE32C5092BF76E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE3E995E19885AB32813AD5A771015A0 /* DZNEmptyDataSet */,
+				293F837BCA172A8AE908CA0AB73F55C8 /* SwiftMessages */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EE3E995E19885AB32813AD5A771015A0 /* DZNEmptyDataSet */ = {
+			isa = PBXGroup;
+			children = (
+				F60A0E8A9DD7D31551A68626B96E3E10 /* UIScrollView+EmptyDataSet.h */,
+				AFFDA29A5CF7824E7368186A16A99230 /* UIScrollView+EmptyDataSet.m */,
+				50FC8EAF62A53CB6F71A6AD194E2F430 /* Support Files */,
+			);
+			name = DZNEmptyDataSet;
+			path = DZNEmptyDataSet;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		653FFE72514B935712D0CE1053D47AD6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C144355E41C99902528AAD3CF069680 /* DZNEmptyDataSet-umbrella.h in Headers */,
+				8511E9645F5C2B18746B4B4B29284451 /* UIScrollView+EmptyDataSet.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE4374020BC6E01C13FB268E0F168005 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D684CEFA1428AA39E2B73E48EEF7D98C /* Pods-Cowflix-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E336F5418EA84E5DB58DE202EC61371F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34B857CE33ABBE908927202FF12CBB02 /* SwiftMessages-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8694E82E9080AB82E2FD5FC66351B6B0 /* SwiftMessages-SwiftMessages */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4253182B61F147F6B9459452CFA0619F /* Build configuration list for PBXNativeTarget "SwiftMessages-SwiftMessages" */;
+			buildPhases = (
+				51278476A9222BDEB56CB373117E4466 /* Sources */,
+				BCD31FD7E2A2229184EF7B9DB849A8C1 /* Frameworks */,
+				188137B242FD7D32B0A02279406A00D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftMessages-SwiftMessages";
+			productName = "SwiftMessages-SwiftMessages";
+			productReference = 545FDE47FE54E35E6883A333C80E6B18 /* SwiftMessages.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		8DF4A0AE622D48F9CE6E46DC65382DB2 /* Pods-Cowflix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BC34C710E8796654BEEC93ED6CF03B4 /* Build configuration list for PBXNativeTarget "Pods-Cowflix" */;
+			buildPhases = (
+				1269E9D78D991C5211671CAB3A8389D4 /* Sources */,
+				A9648FB912AF4F0E72338350572F169F /* Frameworks */,
+				BE4374020BC6E01C13FB268E0F168005 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0422CA8EBA5EB70B2F620E70A989F0E7 /* PBXTargetDependency */,
+				E02FEEDBFB9E9D0D733A7E97A3CA58E6 /* PBXTargetDependency */,
+			);
+			name = "Pods-Cowflix";
+			productName = "Pods-Cowflix";
+			productReference = 912A91ADD5FD5BEA6F4D6BC07DEC918D /* Pods_Cowflix.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D386C75EFD4F03725E4EFB866B600B9A /* DZNEmptyDataSet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC2CBCE24382919CB3DBFC8BB3CC6503 /* Build configuration list for PBXNativeTarget "DZNEmptyDataSet" */;
+			buildPhases = (
+				5235DD2B24AFCD194FE2DD74A43760D8 /* Sources */,
+				59E0885EF9D269547F22DB9E026FB793 /* Frameworks */,
+				653FFE72514B935712D0CE1053D47AD6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DZNEmptyDataSet;
+			productName = DZNEmptyDataSet;
+			productReference = 4C36EABC3CEA703E8234E0767CFB6A02 /* DZNEmptyDataSet.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E17CD25196C2A70EF34ED0137A701DC6 /* SwiftMessages */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D1DB7F214ECF4D2699A87C840188D6E /* Build configuration list for PBXNativeTarget "SwiftMessages" */;
+			buildPhases = (
+				DF595A3D8EA1ABCB43020B57DBAC88D7 /* Sources */,
+				8EAA415C68BB6A6C0783507EF674FAB5 /* Frameworks */,
+				3678CCBEA686C5CF3513B6F48FB34179 /* Resources */,
+				E336F5418EA84E5DB58DE202EC61371F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45B23EF6F930B465867CCA1289D47C5B /* PBXTargetDependency */,
+			);
+			name = SwiftMessages;
+			productName = SwiftMessages;
+			productReference = 69DDC24EE4671E37BD3C030C81AAE153 /* SwiftMessages.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 506C6ECB4CFBDC57C01A8848BCECE7F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D386C75EFD4F03725E4EFB866B600B9A /* DZNEmptyDataSet */,
+				8DF4A0AE622D48F9CE6E46DC65382DB2 /* Pods-Cowflix */,
+				E17CD25196C2A70EF34ED0137A701DC6 /* SwiftMessages */,
+				8694E82E9080AB82E2FD5FC66351B6B0 /* SwiftMessages-SwiftMessages */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		188137B242FD7D32B0A02279406A00D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3FD9E59F83FF48FDCA98BA2CE44D3A1 /* CardView.xib in Resources */,
+				20A943713273EB372A9F170791A8EEB5 /* Images.xcassets in Resources */,
+				91056635BE51B668C6D8389FDE40C9AD /* MessageView.xib in Resources */,
+				F71A034DF2F131EADC7CD49EB22E0504 /* MessageViewIOS8.xib in Resources */,
+				BB3DD3DE41C5348E0065ABC95D74717C /* StatusLine.xib in Resources */,
+				08482F6C541928D58DF9D3684B14F05C /* TabView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3678CCBEA686C5CF3513B6F48FB34179 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				892EA25FA8BE69621EEC9040B8166B59 /* SwiftMessages.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1269E9D78D991C5211671CAB3A8389D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				591409D7A4DFD531B5C298ECD3EDEDA0 /* Pods-Cowflix-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51278476A9222BDEB56CB373117E4466 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5235DD2B24AFCD194FE2DD74A43760D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75D0A461B8CF202F41C55CA1E732124C /* DZNEmptyDataSet-dummy.m in Sources */,
+				4568C6CC7F78399CA1312B20E26EA8FE /* UIScrollView+EmptyDataSet.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF595A3D8EA1ABCB43020B57DBAC88D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14612DCCA082A7D5E3A9D6EEC065CBD0 /* Array+Utils.swift in Sources */,
+				5B09A66B1A9FF939F632B33A37DAD204 /* BackgroundViewable.swift in Sources */,
+				58E7F733C9DED1869F774F2C8F5C0735 /* BaseView.swift in Sources */,
+				B266A2386A313D8EE9F702BF9CC171C0 /* Error.swift in Sources */,
+				ACB3A58A82D3B2384AF9F385E405F752 /* Identifiable.swift in Sources */,
+				4A978ED97D8022A9054B66035419F8F2 /* MarginAdjustable.swift in Sources */,
+				8418F8F71B73859318519A1316330410 /* MessageView.swift in Sources */,
+				55376F43EF24B7254639BD3D930262A0 /* NSBundle+Utils.swift in Sources */,
+				06B6CBF473048BFBC8A4C73E9FA8E273 /* PassthroughView.swift in Sources */,
+				4D2F69B9E7096FBF4FD0F76F5266BEC1 /* PassthroughWindow.swift in Sources */,
+				7607DA04D366A5488262BB1C239D9A61 /* Presenter.swift in Sources */,
+				D5D61221EE9B0FE5B0F70CFFC21315C3 /* SwiftMessages-dummy.m in Sources */,
+				4E60F564C2D7064C555F393DAE22D4AC /* SwiftMessages.swift in Sources */,
+				ED6C0EAA42267E5420894AF43D129BA9 /* Theme.swift in Sources */,
+				95400561A21F9A723103EF035D81CDD9 /* UIViewController+Utils.swift in Sources */,
+				9730BB22CC82CDB50B68DED6E2A5B488 /* WindowViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0422CA8EBA5EB70B2F620E70A989F0E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DZNEmptyDataSet;
+			target = D386C75EFD4F03725E4EFB866B600B9A /* DZNEmptyDataSet */;
+			targetProxy = F6FC5DE5F9EA199DC0BED28AA16961D9 /* PBXContainerItemProxy */;
+		};
+		45B23EF6F930B465867CCA1289D47C5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SwiftMessages-SwiftMessages";
+			target = 8694E82E9080AB82E2FD5FC66351B6B0 /* SwiftMessages-SwiftMessages */;
+			targetProxy = 6169F0E3B33BBEE0445EC2BD7840E0D7 /* PBXContainerItemProxy */;
+		};
+		E02FEEDBFB9E9D0D733A7E97A3CA58E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftMessages;
+			target = E17CD25196C2A70EF34ED0137A701DC6 /* SwiftMessages */;
+			targetProxy = 086148296AF52E84D5542775CF025F91 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		163D87BE96A63549B0EACF1CC31A2E90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		4DE0553644064E48092352321636F78D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A1F1690E2D9180AA71A906334F18FFA /* SwiftMessages.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftMessages/SwiftMessages-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftMessages/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftMessages/SwiftMessages.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftMessages;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		533E9C920A3BED26609A99761A13C302 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EDC0DBAA6A0ECCD491BC1B0AF48885C /* DZNEmptyDataSet.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DZNEmptyDataSet/DZNEmptyDataSet-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DZNEmptyDataSet/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DZNEmptyDataSet/DZNEmptyDataSet.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = DZNEmptyDataSet;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		707B86CFB21B645E37109F39754D4051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		72932F2595CB8E0724299DE2A2C0FE7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A1F1690E2D9180AA71A906334F18FFA /* SwiftMessages.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftMessages/SwiftMessages-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftMessages/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftMessages/SwiftMessages.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftMessages;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		74E937E849A06278D5E2356B71D53DF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 505CC4797990D755AC2332E6FCEA1E70 /* Pods-Cowflix.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Cowflix/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Cowflix/Pods-Cowflix.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Cowflix;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8043756EE00C104EE2288D798D4B3429 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A1F1690E2D9180AA71A906334F18FFA /* SwiftMessages.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SwiftMessages";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/SwiftMessages/ResourceBundle-SwiftMessages-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = SwiftMessages;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		D80D68E868A6D4E7AED3F8AD2D294C53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A1F1690E2D9180AA71A906334F18FFA /* SwiftMessages.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SwiftMessages";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/SwiftMessages/ResourceBundle-SwiftMessages-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = SwiftMessages;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		EA77C4BE4F49016ABCB7F833AB5FDE30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 899D39AD8A44C861A8D8D02028DB6793 /* Pods-Cowflix.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Cowflix/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Cowflix/Pods-Cowflix.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Cowflix;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F862CD7AF32DFBC7E5E14920CEE1F532 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EDC0DBAA6A0ECCD491BC1B0AF48885C /* DZNEmptyDataSet.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DZNEmptyDataSet/DZNEmptyDataSet-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DZNEmptyDataSet/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DZNEmptyDataSet/DZNEmptyDataSet.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = DZNEmptyDataSet;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D1DB7F214ECF4D2699A87C840188D6E /* Build configuration list for PBXNativeTarget "SwiftMessages" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DE0553644064E48092352321636F78D /* Debug */,
+				72932F2595CB8E0724299DE2A2C0FE7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				163D87BE96A63549B0EACF1CC31A2E90 /* Debug */,
+				707B86CFB21B645E37109F39754D4051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4253182B61F147F6B9459452CFA0619F /* Build configuration list for PBXNativeTarget "SwiftMessages-SwiftMessages" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8043756EE00C104EE2288D798D4B3429 /* Debug */,
+				D80D68E868A6D4E7AED3F8AD2D294C53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BC34C710E8796654BEEC93ED6CF03B4 /* Build configuration list for PBXNativeTarget "Pods-Cowflix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74E937E849A06278D5E2356B71D53DF8 /* Debug */,
+				EA77C4BE4F49016ABCB7F833AB5FDE30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC2CBCE24382919CB3DBFC8BB3CC6503 /* Build configuration list for PBXNativeTarget "DZNEmptyDataSet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F862CD7AF32DFBC7E5E14920CEE1F532 /* Debug */,
+				533E9C920A3BED26609A99761A13C302 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

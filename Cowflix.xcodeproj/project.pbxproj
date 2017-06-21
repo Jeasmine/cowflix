@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		80A43C661EF9E90F00C14F95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A43C651EF9E90F00C14F95 /* AppDelegate.swift */; };
+		80A43C681EF9E90F00C14F95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A43C671EF9E90F00C14F95 /* ViewController.swift */; };
+		80A43C6B1EF9E90F00C14F95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A43C691EF9E90F00C14F95 /* Main.storyboard */; };
+		80A43C6E1EF9E90F00C14F95 /* Cowflix.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 80A43C6C1EF9E90F00C14F95 /* Cowflix.xcdatamodeld */; };
+		80A43C701EF9E90F00C14F95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80A43C6F1EF9E90F00C14F95 /* Assets.xcassets */; };
+		80A43C731EF9E90F00C14F95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A43C711EF9E90F00C14F95 /* LaunchScreen.storyboard */; };
+		A61F866887B3A1E101DA00DE /* Pods_Cowflix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B288CE51469C854589F032BC /* Pods_Cowflix.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6969A5795E23C4BD0869C858 /* Pods-Cowflix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cowflix.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cowflix/Pods-Cowflix.release.xcconfig"; sourceTree = "<group>"; };
+		80A43C621EF9E90F00C14F95 /* Cowflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cowflix.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80A43C651EF9E90F00C14F95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		80A43C671EF9E90F00C14F95 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		80A43C6A1EF9E90F00C14F95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		80A43C6D1EF9E90F00C14F95 /* Cowflix.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cowflix.xcdatamodel; sourceTree = "<group>"; };
+		80A43C6F1EF9E90F00C14F95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		80A43C721EF9E90F00C14F95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		80A43C741EF9E90F00C14F95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B288CE51469C854589F032BC /* Pods_Cowflix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cowflix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAD48644E7940AF76019000A /* Pods-Cowflix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cowflix.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cowflix/Pods-Cowflix.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		80A43C5F1EF9E90F00C14F95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A61F866887B3A1E101DA00DE /* Pods_Cowflix.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		80A43C591EF9E90F00C14F95 = {
+			isa = PBXGroup;
+			children = (
+				80A43C641EF9E90F00C14F95 /* Cowflix */,
+				80A43C631EF9E90F00C14F95 /* Products */,
+				F2549481886744B13AC4F54B /* Pods */,
+				AE583CC4DFCC8684F3987AC6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		80A43C631EF9E90F00C14F95 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80A43C621EF9E90F00C14F95 /* Cowflix.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80A43C641EF9E90F00C14F95 /* Cowflix */ = {
+			isa = PBXGroup;
+			children = (
+				80A43C651EF9E90F00C14F95 /* AppDelegate.swift */,
+				80A43C671EF9E90F00C14F95 /* ViewController.swift */,
+				80A43C691EF9E90F00C14F95 /* Main.storyboard */,
+				80A43C6F1EF9E90F00C14F95 /* Assets.xcassets */,
+				80A43C711EF9E90F00C14F95 /* LaunchScreen.storyboard */,
+				80A43C741EF9E90F00C14F95 /* Info.plist */,
+				80A43C6C1EF9E90F00C14F95 /* Cowflix.xcdatamodeld */,
+			);
+			path = Cowflix;
+			sourceTree = "<group>";
+		};
+		AE583CC4DFCC8684F3987AC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B288CE51469C854589F032BC /* Pods_Cowflix.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F2549481886744B13AC4F54B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FAD48644E7940AF76019000A /* Pods-Cowflix.debug.xcconfig */,
+				6969A5795E23C4BD0869C858 /* Pods-Cowflix.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		80A43C611EF9E90F00C14F95 /* Cowflix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80A43C771EF9E90F00C14F95 /* Build configuration list for PBXNativeTarget "Cowflix" */;
+			buildPhases = (
+				C2C62A6F709E0323B6622C47 /* [CP] Check Pods Manifest.lock */,
+				80A43C5E1EF9E90F00C14F95 /* Sources */,
+				80A43C5F1EF9E90F00C14F95 /* Frameworks */,
+				80A43C601EF9E90F00C14F95 /* Resources */,
+				90716A8B9FEC71D97E818FA4 /* [CP] Embed Pods Frameworks */,
+				E3E0DB76CEDBC5EBA4AEC59E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cowflix;
+			productName = Cowflix;
+			productReference = 80A43C621EF9E90F00C14F95 /* Cowflix.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		80A43C5A1EF9E90F00C14F95 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = workshop;
+				TargetAttributes = {
+					80A43C611EF9E90F00C14F95 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = ZYXCB6QKKT;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 80A43C5D1EF9E90F00C14F95 /* Build configuration list for PBXProject "Cowflix" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 80A43C591EF9E90F00C14F95;
+			productRefGroup = 80A43C631EF9E90F00C14F95 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80A43C611EF9E90F00C14F95 /* Cowflix */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		80A43C601EF9E90F00C14F95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80A43C731EF9E90F00C14F95 /* LaunchScreen.storyboard in Resources */,
+				80A43C701EF9E90F00C14F95 /* Assets.xcassets in Resources */,
+				80A43C6B1EF9E90F00C14F95 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		90716A8B9FEC71D97E818FA4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cowflix/Pods-Cowflix-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2C62A6F709E0323B6622C47 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E3E0DB76CEDBC5EBA4AEC59E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cowflix/Pods-Cowflix-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80A43C5E1EF9E90F00C14F95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80A43C681EF9E90F00C14F95 /* ViewController.swift in Sources */,
+				80A43C6E1EF9E90F00C14F95 /* Cowflix.xcdatamodeld in Sources */,
+				80A43C661EF9E90F00C14F95 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		80A43C691EF9E90F00C14F95 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80A43C6A1EF9E90F00C14F95 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		80A43C711EF9E90F00C14F95 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80A43C721EF9E90F00C14F95 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		80A43C751EF9E90F00C14F95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		80A43C761EF9E90F00C14F95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		80A43C781EF9E90F00C14F95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAD48644E7940AF76019000A /* Pods-Cowflix.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZYXCB6QKKT;
+				INFOPLIST_FILE = Cowflix/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.workshop.ios.Cowflix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		80A43C791EF9E90F00C14F95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6969A5795E23C4BD0869C858 /* Pods-Cowflix.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZYXCB6QKKT;
+				INFOPLIST_FILE = Cowflix/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.workshop.ios.Cowflix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		80A43C5D1EF9E90F00C14F95 /* Build configuration list for PBXProject "Cowflix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80A43C751EF9E90F00C14F95 /* Debug */,
+				80A43C761EF9E90F00C14F95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80A43C771EF9E90F00C14F95 /* Build configuration list for PBXNativeTarget "Cowflix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80A43C781EF9E90F00C14F95 /* Debug */,
+				80A43C791EF9E90F00C14F95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		80A43C6C1EF9E90F00C14F95 /* Cowflix.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				80A43C6D1EF9E90F00C14F95 /* Cowflix.xcdatamodel */,
+			);
+			currentVersion = 80A43C6D1EF9E90F00C14F95 /* Cowflix.xcdatamodel */;
+			path = Cowflix.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 80A43C5A1EF9E90F00C14F95 /* Project object */;
+}
