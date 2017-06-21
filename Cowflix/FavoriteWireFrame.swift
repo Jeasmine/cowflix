@@ -3,7 +3,8 @@ import UIKit
 class FavoriteWireFrame: FavoriteRouterProtocol {
     
     static func createFavoriteModule() -> UIViewController {
-        let navController = mainStoryboard.instantiateViewController(withIdentifier:"FavoritesNavigationController")
+        let navController = mainStoryboard.instantiateViewController(withIdentifier:"FavoritesNavigationController") as! UINavigationController
+        navController.navigationBar.barTintColor = UIColor.gray
         return navController
     }
     
