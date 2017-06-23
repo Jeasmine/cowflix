@@ -7,5 +7,6 @@ target ‘Cowflix’ do
   # Pods for TaTeTi
   pod 'SwiftMessages', '~> 3.1.5'
   pod 'DZNEmptyDataSet', '~> 1.8.1'
-
+  pod 'Alamofire', '~> 4.4'
+  
 end

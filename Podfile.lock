@@ -1,15 +1,18 @@
 PODS:
+  - Alamofire (4.4.0)
   - DZNEmptyDataSet (1.8.1)
   - SwiftMessages (3.1.5)
 
 DEPENDENCIES:
+  - Alamofire (~> 4.4)
   - DZNEmptyDataSet (~> 1.8.1)
   - SwiftMessages (~> 3.1.5)
 
 SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   SwiftMessages: bb85d7c30e85256f9367214b0907e1f409e1870a
 
-PODFILE CHECKSUM: b09dd00e6a76ad0e646fa073a7c72df31f98d2a5
+PODFILE CHECKSUM: 052f116b7a7bf4686555ee1dca3cc6b4e407cddb
 
 COCOAPODS: 1.2.1

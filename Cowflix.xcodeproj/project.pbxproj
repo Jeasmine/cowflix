@@ -11,7 +11,6 @@
 		80A43C681EF9E90F00C14F95 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A43C671EF9E90F00C14F95 /* HomeView.swift */; };
 		80A43C6B1EF9E90F00C14F95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A43C691EF9E90F00C14F95 /* Main.storyboard */; };
 		80A43C6E1EF9E90F00C14F95 /* Cowflix.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 80A43C6C1EF9E90F00C14F95 /* Cowflix.xcdatamodeld */; };
-		80A43C701EF9E90F00C14F95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80A43C6F1EF9E90F00C14F95 /* Assets.xcassets */; };
 		80A43C731EF9E90F00C14F95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A43C711EF9E90F00C14F95 /* LaunchScreen.storyboard */; };
 		80A43C7F1EF9F6CA00C14F95 /* HomeWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A43C7E1EF9F6CA00C14F95 /* HomeWireFrame.swift */; };
 		80A43C811EF9F75700C14F95 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A43C801EF9F75700C14F95 /* HomeProtocols.swift */; };
@@ -21,6 +20,10 @@
 		80A43C9B1EFA127B00C14F95 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A43C9A1EFA127B00C14F95 /* FavoriteView.swift */; };
 		80A43CA01EFA12F200C14F95 /* FavoriteProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A43C9F1EFA12F200C14F95 /* FavoriteProtocols.swift */; };
 		80A43CA21EFA144F00C14F95 /* FavoriteWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A43CA11EFA144F00C14F95 /* FavoriteWireFrame.swift */; };
+		80D610721EFCA55400013888 /* SearchWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D610711EFCA55400013888 /* SearchWireFrame.swift */; };
+		80D610741EFCA57300013888 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D610731EFCA57300013888 /* SearchView.swift */; };
+		80D610761EFCA58100013888 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D610751EFCA58100013888 /* SearchPresenter.swift */; };
+		80D610781EFCA5E100013888 /* SearchProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D610771EFCA5E100013888 /* SearchProtocol.swift */; };
 		A61F866887B3A1E101DA00DE /* Pods_Cowflix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B288CE51469C854589F032BC /* Pods_Cowflix.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,7 +34,6 @@
 		80A43C671EF9E90F00C14F95 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		80A43C6A1EF9E90F00C14F95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		80A43C6D1EF9E90F00C14F95 /* Cowflix.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cowflix.xcdatamodel; sourceTree = "<group>"; };
-		80A43C6F1EF9E90F00C14F95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80A43C721EF9E90F00C14F95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80A43C741EF9E90F00C14F95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80A43C7E1EF9F6CA00C14F95 /* HomeWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeWireFrame.swift; sourceTree = "<group>"; };
@@ -42,6 +44,10 @@
 		80A43C9A1EFA127B00C14F95 /* FavoriteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
 		80A43C9F1EFA12F200C14F95 /* FavoriteProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteProtocols.swift; sourceTree = "<group>"; };
 		80A43CA11EFA144F00C14F95 /* FavoriteWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteWireFrame.swift; sourceTree = "<group>"; };
+		80D610711EFCA55400013888 /* SearchWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchWireFrame.swift; sourceTree = "<group>"; };
+		80D610731EFCA57300013888 /* SearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		80D610751EFCA58100013888 /* SearchPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
+		80D610771EFCA5E100013888 /* SearchProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchProtocol.swift; sourceTree = "<group>"; };
 		B288CE51469C854589F032BC /* Pods_Cowflix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cowflix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD48644E7940AF76019000A /* Pods-Cowflix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cowflix.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cowflix/Pods-Cowflix.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,6 +89,7 @@
 				80A43C881EF9FDD700C14F95 /* Interactor */,
 				80A43C9C1EFA128300C14F95 /* Favorites */,
 				80A43C7D1EF9F4D600C14F95 /* Home */,
+				80D6106D1EFCA4D500013888 /* Serach */,
 				80A43C981EFA0EE400C14F95 /* TabbarWireFrame.swift */,
 				80A43C8C1EF9FF0400C14F95 /* Storyboard */,
 				80A43C651EF9E90F00C14F95 /* AppDelegate.swift */,
@@ -169,7 +176,6 @@
 		80A43C8C1EF9FF0400C14F95 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				80A43C6F1EF9E90F00C14F95 /* Assets.xcassets */,
 				80A43C691EF9E90F00C14F95 /* Main.storyboard */,
 				80A43C711EF9E90F00C14F95 /* LaunchScreen.storyboard */,
 			);
@@ -200,6 +206,41 @@
 				80A43CA11EFA144F00C14F95 /* FavoriteWireFrame.swift */,
 			);
 			name = WireFrame;
+			sourceTree = "<group>";
+		};
+		80D6106D1EFCA4D500013888 /* Serach */ = {
+			isa = PBXGroup;
+			children = (
+				80D6106E1EFCA4FC00013888 /* WireFrame */,
+				80D6106F1EFCA50300013888 /* View */,
+				80D610701EFCA50800013888 /* Presenter */,
+				80D610771EFCA5E100013888 /* SearchProtocol.swift */,
+			);
+			name = Serach;
+			sourceTree = "<group>";
+		};
+		80D6106E1EFCA4FC00013888 /* WireFrame */ = {
+			isa = PBXGroup;
+			children = (
+				80D610711EFCA55400013888 /* SearchWireFrame.swift */,
+			);
+			name = WireFrame;
+			sourceTree = "<group>";
+		};
+		80D6106F1EFCA50300013888 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				80D610731EFCA57300013888 /* SearchView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		80D610701EFCA50800013888 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				80D610751EFCA58100013888 /* SearchPresenter.swift */,
+			);
+			name = Presenter;
 			sourceTree = "<group>";
 		};
 		AE583CC4DFCC8684F3987AC6 /* Frameworks */ = {
@@ -283,7 +324,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				80A43C731EF9E90F00C14F95 /* LaunchScreen.storyboard in Resources */,
-				80A43C701EF9E90F00C14F95 /* Assets.xcassets in Resources */,
 				80A43C6B1EF9E90F00C14F95 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,13 +383,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80D610721EFCA55400013888 /* SearchWireFrame.swift in Sources */,
+				80D610781EFCA5E100013888 /* SearchProtocol.swift in Sources */,
 				80A43C681EF9E90F00C14F95 /* HomeView.swift in Sources */,
 				80A43C811EF9F75700C14F95 /* HomeProtocols.swift in Sources */,
 				80A43CA21EFA144F00C14F95 /* FavoriteWireFrame.swift in Sources */,
 				80A43C7F1EF9F6CA00C14F95 /* HomeWireFrame.swift in Sources */,
 				80A43C831EF9FB9C00C14F95 /* HomePresenter.swift in Sources */,
+				80D610761EFCA58100013888 /* SearchPresenter.swift in Sources */,
 				80A43C6E1EF9E90F00C14F95 /* Cowflix.xcdatamodeld in Sources */,
 				80A43C661EF9E90F00C14F95 /* AppDelegate.swift in Sources */,
+				80D610741EFCA57300013888 /* SearchView.swift in Sources */,
 				80A43C991EFA0EE400C14F95 /* TabbarWireFrame.swift in Sources */,
 				80A43CA01EFA12F200C14F95 /* FavoriteProtocols.swift in Sources */,
 				80A43C8E1EF9FF6600C14F95 /* HomeInteractor.swift in Sources */,

@@ -1,7 +1,9 @@
 import UIKit
 
-protocol HomeRouterProtocol: class {
+protocol HomeWireFrameProtocol: class {
     static func createHomeModule() -> UIViewController
+    
+    func presentSearchScreen(from view: HomeViewProtocol)
 }
 
 protocol HomeViewProtocol: class {
@@ -11,9 +13,10 @@ protocol HomeViewProtocol: class {
 protocol HomePresenterProtocol: class {
     var view: HomeViewProtocol? { get set }
     var interactor: HomeInteractorInputProtocol? { get set }
-    var router: HomeRouterProtocol? { get set }
+    var wireFrame: HomeWireFrameProtocol? { get set }
     
     func viewDidLoad()
+    func search(from view: HomeViewProtocol)
 }
 
 protocol HomeInteractorOutputProtocol: class {}
