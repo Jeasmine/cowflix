@@ -24,6 +24,7 @@
 		80D610741EFCA57300013888 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D610731EFCA57300013888 /* SearchView.swift */; };
 		80D610761EFCA58100013888 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D610751EFCA58100013888 /* SearchPresenter.swift */; };
 		80D610781EFCA5E100013888 /* SearchProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D610771EFCA5E100013888 /* SearchProtocol.swift */; };
+		80D6107A1EFE1ABA00013888 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D610791EFE1ABA00013888 /* Constant.swift */; };
 		A61F866887B3A1E101DA00DE /* Pods_Cowflix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B288CE51469C854589F032BC /* Pods_Cowflix.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		80D610731EFCA57300013888 /* SearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		80D610751EFCA58100013888 /* SearchPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
 		80D610771EFCA5E100013888 /* SearchProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchProtocol.swift; sourceTree = "<group>"; };
+		80D610791EFE1ABA00013888 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		B288CE51469C854589F032BC /* Pods_Cowflix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cowflix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD48644E7940AF76019000A /* Pods-Cowflix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cowflix.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cowflix/Pods-Cowflix.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,6 +118,7 @@
 				80A43C871EF9FDC700C14F95 /* Repository */,
 				80A43C861EF9FDC100C14F95 /* Network */,
 				80A43C851EF9FD8400C14F95 /* Entities */,
+				80D610791EFE1ABA00013888 /* Constant.swift */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 				80D610721EFCA55400013888 /* SearchWireFrame.swift in Sources */,
 				80D610781EFCA5E100013888 /* SearchProtocol.swift in Sources */,
 				80A43C681EF9E90F00C14F95 /* HomeView.swift in Sources */,
+				80D6107A1EFE1ABA00013888 /* Constant.swift in Sources */,
 				80A43C811EF9F75700C14F95 /* HomeProtocols.swift in Sources */,
 				80A43CA21EFA144F00C14F95 /* FavoriteWireFrame.swift in Sources */,
 				80A43C7F1EF9F6CA00C14F95 /* HomeWireFrame.swift in Sources */,
