@@ -8,5 +8,6 @@ target ‘Cowflix’ do
   pod 'SwiftMessages', '~> 3.1.5'
   pod 'DZNEmptyDataSet', '~> 1.8.1'
   pod 'Alamofire', '~> 4.4'
-  
+  pod 'AlamofireImage', '~> 3.1'
+  pod 'AlamofireObjectMapper', '~> 4.0'
 end
