@@ -6,11 +6,16 @@ class HomeWireFrame: HomeWireFrameProtocol {
         let navController = mainStoryboard.instantiateViewController(withIdentifier:"HomeNavigationController")
         if let view = navController.childViewControllers.first as? HomeView {
             let presenter = HomePresenter()
+            let interactor = HomeInteractor()
+            let dataManager = HomeDataManager()
             let wireFrame = HomeWireFrame()
             
             view.presenter = presenter
             presenter.view = view
             presenter.wireFrame = wireFrame
+            presenter.interactor = interactor
+            interactor.presenter = presenter
+            interactor.dataManager = dataManager
             
             return navController
         }

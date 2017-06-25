@@ -25,6 +25,10 @@
 		80D610761EFCA58100013888 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D610751EFCA58100013888 /* SearchPresenter.swift */; };
 		80D610781EFCA5E100013888 /* SearchProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D610771EFCA5E100013888 /* SearchProtocol.swift */; };
 		80D6107A1EFE1ABA00013888 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D610791EFE1ABA00013888 /* Constant.swift */; };
+		80D6107C1F0074CA00013888 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D6107B1F0074CA00013888 /* Movie.swift */; };
+		80D6107E1F0079C300013888 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D6107D1F0079C300013888 /* APIManager.swift */; };
+		80D610801F00841D00013888 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D6107F1F00841D00013888 /* Result.swift */; };
+		80D77E1B1F00AE96003481E0 /* HomeDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D77E1A1F00AE96003481E0 /* HomeDataManager.swift */; };
 		A61F866887B3A1E101DA00DE /* Pods_Cowflix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B288CE51469C854589F032BC /* Pods_Cowflix.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +54,10 @@
 		80D610751EFCA58100013888 /* SearchPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
 		80D610771EFCA5E100013888 /* SearchProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchProtocol.swift; sourceTree = "<group>"; };
 		80D610791EFE1ABA00013888 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		80D6107B1F0074CA00013888 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		80D6107D1F0079C300013888 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		80D6107F1F00841D00013888 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		80D77E1A1F00AE96003481E0 /* HomeDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDataManager.swift; sourceTree = "<group>"; };
 		B288CE51469C854589F032BC /* Pods_Cowflix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cowflix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD48644E7940AF76019000A /* Pods-Cowflix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cowflix.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cowflix/Pods-Cowflix.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,7 +99,7 @@
 				80A43C881EF9FDD700C14F95 /* Interactor */,
 				80A43C9C1EFA128300C14F95 /* Favorites */,
 				80A43C7D1EF9F4D600C14F95 /* Home */,
-				80D6106D1EFCA4D500013888 /* Serach */,
+				80D6106D1EFCA4D500013888 /* Search */,
 				80A43C981EFA0EE400C14F95 /* TabbarWireFrame.swift */,
 				80A43C8C1EF9FF0400C14F95 /* Storyboard */,
 				80A43C651EF9E90F00C14F95 /* AppDelegate.swift */,
@@ -116,7 +124,7 @@
 			children = (
 				80A43C6C1EF9E90F00C14F95 /* Cowflix.xcdatamodeld */,
 				80A43C871EF9FDC700C14F95 /* Repository */,
-				80A43C861EF9FDC100C14F95 /* Network */,
+				80A43C861EF9FDC100C14F95 /* DataManager */,
 				80A43C851EF9FD8400C14F95 /* Entities */,
 				80D610791EFE1ABA00013888 /* Constant.swift */,
 			);
@@ -126,15 +134,18 @@
 		80A43C851EF9FD8400C14F95 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				80D6107B1F0074CA00013888 /* Movie.swift */,
+				80D6107F1F00841D00013888 /* Result.swift */,
 			);
 			name = Entities;
 			sourceTree = "<group>";
 		};
-		80A43C861EF9FDC100C14F95 /* Network */ = {
+		80A43C861EF9FDC100C14F95 /* DataManager */ = {
 			isa = PBXGroup;
 			children = (
+				80D77E1E1F00AF16003481E0 /* API */,
 			);
-			name = Network;
+			name = DataManager;
 			sourceTree = "<group>";
 		};
 		80A43C871EF9FDC700C14F95 /* Repository */ = {
@@ -211,7 +222,7 @@
 			name = WireFrame;
 			sourceTree = "<group>";
 		};
-		80D6106D1EFCA4D500013888 /* Serach */ = {
+		80D6106D1EFCA4D500013888 /* Search */ = {
 			isa = PBXGroup;
 			children = (
 				80D6106E1EFCA4FC00013888 /* WireFrame */,
@@ -219,7 +230,7 @@
 				80D610701EFCA50800013888 /* Presenter */,
 				80D610771EFCA5E100013888 /* SearchProtocol.swift */,
 			);
-			name = Serach;
+			name = Search;
 			sourceTree = "<group>";
 		};
 		80D6106E1EFCA4FC00013888 /* WireFrame */ = {
@@ -244,6 +255,23 @@
 				80D610751EFCA58100013888 /* SearchPresenter.swift */,
 			);
 			name = Presenter;
+			sourceTree = "<group>";
+		};
+		80D77E191F00AE6F003481E0 /* HomeDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				80D77E1A1F00AE96003481E0 /* HomeDataManager.swift */,
+			);
+			name = HomeDataManager;
+			sourceTree = "<group>";
+		};
+		80D77E1E1F00AF16003481E0 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				80D6107D1F0079C300013888 /* APIManager.swift */,
+				80D77E191F00AE6F003481E0 /* HomeDataManager */,
+			);
+			name = API;
 			sourceTree = "<group>";
 		};
 		AE583CC4DFCC8684F3987AC6 /* Frameworks */ = {
@@ -387,6 +415,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				80D610721EFCA55400013888 /* SearchWireFrame.swift in Sources */,
+				80D6107E1F0079C300013888 /* APIManager.swift in Sources */,
 				80D610781EFCA5E100013888 /* SearchProtocol.swift in Sources */,
 				80A43C681EF9E90F00C14F95 /* HomeView.swift in Sources */,
 				80D6107A1EFE1ABA00013888 /* Constant.swift in Sources */,
@@ -395,6 +424,7 @@
 				80A43C7F1EF9F6CA00C14F95 /* HomeWireFrame.swift in Sources */,
 				80A43C831EF9FB9C00C14F95 /* HomePresenter.swift in Sources */,
 				80D610761EFCA58100013888 /* SearchPresenter.swift in Sources */,
+				80D77E1B1F00AE96003481E0 /* HomeDataManager.swift in Sources */,
 				80A43C6E1EF9E90F00C14F95 /* Cowflix.xcdatamodeld in Sources */,
 				80A43C661EF9E90F00C14F95 /* AppDelegate.swift in Sources */,
 				80D610741EFCA57300013888 /* SearchView.swift in Sources */,
@@ -402,6 +432,8 @@
 				80A43CA01EFA12F200C14F95 /* FavoriteProtocols.swift in Sources */,
 				80A43C8E1EF9FF6600C14F95 /* HomeInteractor.swift in Sources */,
 				80A43C9B1EFA127B00C14F95 /* FavoriteView.swift in Sources */,
+				80D610801F00841D00013888 /* Result.swift in Sources */,
+				80D6107C1F0074CA00013888 /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
