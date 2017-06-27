@@ -8,7 +8,7 @@ class TabbarWireFrame {
             let moduleTwo = FavoriteWireFrame.createFavoriteModule()
             
             moduleOne.tabBarItem.title = "Home"
-            moduleTwo.tabBarItem.title = "Favorites"
+            moduleTwo.tabBarItem.title = "⭐️"
             
             tabbbarController.viewControllers = [moduleOne, moduleTwo]
             tabbbarController.tabBar.barStyle = .black
