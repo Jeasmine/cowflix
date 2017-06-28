@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8034625F1F05DD8400E64969 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8034625E1F05DD8400E64969 /* Assets.xcassets */; };
 		80A43C661EF9E90F00C14F95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A43C651EF9E90F00C14F95 /* AppDelegate.swift */; };
 		80A43C681EF9E90F00C14F95 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A43C671EF9E90F00C14F95 /* HomeView.swift */; };
 		80A43C6B1EF9E90F00C14F95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A43C691EF9E90F00C14F95 /* Main.storyboard */; };
@@ -20,6 +21,8 @@
 		80A43C9B1EFA127B00C14F95 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A43C9A1EFA127B00C14F95 /* FavoriteView.swift */; };
 		80A43CA01EFA12F200C14F95 /* FavoriteProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A43C9F1EFA12F200C14F95 /* FavoriteProtocols.swift */; };
 		80A43CA21EFA144F00C14F95 /* FavoriteWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A43CA11EFA144F00C14F95 /* FavoriteWireFrame.swift */; };
+		80B87C1D1F0310D00093E385 /* MovieCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80B87C1C1F0310D00093E385 /* MovieCustomCell.xib */; };
+		80B87C1F1F03229D0093E385 /* MovieCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B87C1E1F03229D0093E385 /* MovieCustomCell.swift */; };
 		80D610721EFCA55400013888 /* SearchWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D610711EFCA55400013888 /* SearchWireFrame.swift */; };
 		80D610741EFCA57300013888 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D610731EFCA57300013888 /* SearchView.swift */; };
 		80D610761EFCA58100013888 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D610751EFCA58100013888 /* SearchPresenter.swift */; };
@@ -34,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		6969A5795E23C4BD0869C858 /* Pods-Cowflix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cowflix.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cowflix/Pods-Cowflix.release.xcconfig"; sourceTree = "<group>"; };
+		8034625E1F05DD8400E64969 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80A43C621EF9E90F00C14F95 /* Cowflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cowflix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80A43C651EF9E90F00C14F95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80A43C671EF9E90F00C14F95 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -49,6 +53,8 @@
 		80A43C9A1EFA127B00C14F95 /* FavoriteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
 		80A43C9F1EFA12F200C14F95 /* FavoriteProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteProtocols.swift; sourceTree = "<group>"; };
 		80A43CA11EFA144F00C14F95 /* FavoriteWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteWireFrame.swift; sourceTree = "<group>"; };
+		80B87C1C1F0310D00093E385 /* MovieCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieCustomCell.xib; sourceTree = "<group>"; };
+		80B87C1E1F03229D0093E385 /* MovieCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCustomCell.swift; sourceTree = "<group>"; };
 		80D610711EFCA55400013888 /* SearchWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchWireFrame.swift; sourceTree = "<group>"; };
 		80D610731EFCA57300013888 /* SearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		80D610751EFCA58100013888 /* SearchPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
@@ -97,6 +103,7 @@
 			children = (
 				80A43C841EF9FD7D00C14F95 /* Data */,
 				80A43C881EF9FDD700C14F95 /* Interactor */,
+				80B87C201F0323560093E385 /* Views */,
 				80A43C9C1EFA128300C14F95 /* Favorites */,
 				80A43C7D1EF9F4D600C14F95 /* Home */,
 				80D6106D1EFCA4D500013888 /* Search */,
@@ -190,6 +197,7 @@
 		80A43C8C1EF9FF0400C14F95 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				8034625E1F05DD8400E64969 /* Assets.xcassets */,
 				80A43C691EF9E90F00C14F95 /* Main.storyboard */,
 				80A43C711EF9E90F00C14F95 /* LaunchScreen.storyboard */,
 			);
@@ -220,6 +228,15 @@
 				80A43CA11EFA144F00C14F95 /* FavoriteWireFrame.swift */,
 			);
 			name = WireFrame;
+			sourceTree = "<group>";
+		};
+		80B87C201F0323560093E385 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				80B87C1C1F0310D00093E385 /* MovieCustomCell.xib */,
+				80B87C1E1F03229D0093E385 /* MovieCustomCell.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		80D6106D1EFCA4D500013888 /* Search */ = {
@@ -354,7 +371,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80B87C1D1F0310D00093E385 /* MovieCustomCell.xib in Resources */,
 				80A43C731EF9E90F00C14F95 /* LaunchScreen.storyboard in Resources */,
+				8034625F1F05DD8400E64969 /* Assets.xcassets in Resources */,
 				80A43C6B1EF9E90F00C14F95 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +447,7 @@
 				80A43C6E1EF9E90F00C14F95 /* Cowflix.xcdatamodeld in Sources */,
 				80A43C661EF9E90F00C14F95 /* AppDelegate.swift in Sources */,
 				80D610741EFCA57300013888 /* SearchView.swift in Sources */,
+				80B87C1F1F03229D0093E385 /* MovieCustomCell.swift in Sources */,
 				80A43C991EFA0EE400C14F95 /* TabbarWireFrame.swift in Sources */,
 				80A43CA01EFA12F200C14F95 /* FavoriteProtocols.swift in Sources */,
 				80A43C8E1EF9FF6600C14F95 /* HomeInteractor.swift in Sources */,

@@ -1,4 +1,5 @@
 import UIKit
+import AlamofireImage
 import AlamofireObjectMapper
 
 protocol HomeWireFrameProtocol: class {
@@ -19,6 +20,7 @@ protocol HomePresenterProtocol: class {
     var wireFrame: HomeWireFrameProtocol? { get set }
     
     func viewDidLoad()
+
     func search(from view: HomeViewProtocol)
 }
 

@@ -1,3 +1,4 @@
+import AlamofireImage
 
 class HomePresenter: HomePresenterProtocol {
     
@@ -18,7 +19,7 @@ extension HomePresenter: HomeInteractorOutputProtocol {
     
     func didRetrieveMovies(_ movies: [Movie]) {
         view?.reloadInterface(with: movies.map() {
-            return MovieViewModel(title: $0.title)
+            return MovieViewModel(title: $0.title, imagePath: $0.posterPath, image: nil)
         })
     }
 }

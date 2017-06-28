@@ -1,4 +1,5 @@
 import ObjectMapper
+import AlamofireImage
 
 class Movie: Mappable {
 
@@ -8,7 +9,7 @@ class Movie: Mappable {
     var voteAverage: Int?
     var title = ""
     var popularity: Double?
-    var posterPath: String?
+    var posterPath: String = ""
     var originalLanguage: String?
     var originalTitle: String?
     var genreIds: [Int]?
@@ -40,6 +41,8 @@ class Movie: Mappable {
 
 public struct MovieViewModel {
     var title = ""
+    var imagePath = ""
+    var image: Image? = nil
 }
 
 public func <(lhs: MovieViewModel, rhs: MovieViewModel) -> Bool {

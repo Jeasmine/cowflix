@@ -16,7 +16,6 @@ class HomeWireFrame: HomeWireFrameProtocol {
             presenter.interactor = interactor
             interactor.presenter = presenter
             interactor.dataManager = dataManager
-            
             return navController
         }
         return UIViewController()
