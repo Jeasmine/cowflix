@@ -31,4 +31,11 @@ class HomeWireFrame: HomeWireFrameProtocol {
             sourceView.present(module, animated: true, completion: nil)
         }
     }
+    
+    func presentDetailScreen(from view: HomeViewProtocol, with movie: MovieViewModel) {
+        let module = DetailWireFrame.createDetailModule(movie: movie)
+        if let sourceView = view as? UIViewController {
+            sourceView.present(module, animated: true, completion: nil)
+        }
+    }
 }

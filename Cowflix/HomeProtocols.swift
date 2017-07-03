@@ -1,11 +1,11 @@
 import UIKit
-import AlamofireImage
 import AlamofireObjectMapper
 
 protocol HomeWireFrameProtocol: class {
     static func createHomeModule() -> UIViewController
     
     func presentSearchScreen(from view: HomeViewProtocol)
+    func presentDetailScreen(from view: HomeViewProtocol, with movie: MovieViewModel)
 }
 
 protocol HomeViewProtocol: class {
@@ -22,6 +22,8 @@ protocol HomePresenterProtocol: class {
     func viewDidLoad()
 
     func search(from view: HomeViewProtocol)
+    
+    func detail(from view: HomeViewProtocol, with movie: MovieViewModel)
 }
 
 protocol HomeInteractorOutputProtocol: class {

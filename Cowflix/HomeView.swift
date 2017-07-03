@@ -62,6 +62,10 @@ extension HomeView: UICollectionViewDataSource {
 }
 
 extension HomeView: UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        presenter?.detail(from: self, with: movieList[indexPath.row])
+    }
 }
 
 extension HomeView: UICollectionViewDelegateFlowLayout {

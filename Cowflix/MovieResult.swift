@@ -1,6 +1,6 @@
 import ObjectMapper
 
-class Result: Mappable {
+class MovieResult: Mappable {
     
     var page: Int?
     var totalPages: Int?
@@ -8,7 +8,6 @@ class Result: Mappable {
     var data: [Movie]?
     
     required init?(map: Map){
-        
     }
     
     func mapping(map: Map) {

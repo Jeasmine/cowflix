@@ -3,7 +3,7 @@ import AlamofireImage
 
 class Movie: Mappable {
 
-    var id: Int?
+    var id = 0
     var voteCount: Int?
     var video: Bool?
     var voteAverage: Int?
@@ -22,7 +22,7 @@ class Movie: Mappable {
     }
     
     func mapping(map: Map) {
-        id <- map["location"]
+        id <- map["id"]
         voteCount <- map["vote_count"]
         video <- map["video"]
         voteAverage <- map["vote_average"]
@@ -40,6 +40,7 @@ class Movie: Mappable {
 }
 
 public struct MovieViewModel {
+    var id = 0
     var title = ""
     var imagePath = ""
     var image: Image? = nil
