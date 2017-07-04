@@ -1,7 +1,9 @@
 import UIKit
 
-protocol FavoriteRouterProtocol: class {
+protocol FavoriteWireFrameProtocol: class {
     static func createFavoriteModule() -> UIViewController
+    
+    func presentDetailScreen(with movie: MovieDataCell)
 }
 
 protocol FavoriteViewProtocol: class {
@@ -11,9 +13,10 @@ protocol FavoriteViewProtocol: class {
 protocol FavoritePresenterProtocol: class {
     var view: FavoriteViewProtocol? { get set }
     var interactor: FavoriteInteractorInputProtocol? { get set }
-    var router: FavoriteRouterProtocol? { get set }
+    var wireFrame: FavoriteWireFrameProtocol? { get set }
     
     func viewDidLoad()
+    func detail(with movie: MovieDataCell)
 }
 
 protocol FavoriteInteractorOutputProtocol: class {}

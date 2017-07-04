@@ -25,6 +25,8 @@
 		80D610761EFCA58100013888 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D610751EFCA58100013888 /* SearchPresenter.swift */; };
 		80D610781EFCA5E100013888 /* SearchProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D610771EFCA5E100013888 /* SearchProtocol.swift */; };
 		80D6107A1EFE1ABA00013888 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D610791EFE1ABA00013888 /* Constant.swift */; };
+		8DD73B4B1F02FFAB004C2F8C /* MovieDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD73B4A1F02FFAB004C2F8C /* MovieDataCell.swift */; };
+		8DD73B4E1F031421004C2F8C /* FavoritesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD73B4D1F031421004C2F8C /* FavoritesPresenter.swift */; };
 		A61F866887B3A1E101DA00DE /* Pods_Cowflix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B288CE51469C854589F032BC /* Pods_Cowflix.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +52,8 @@
 		80D610751EFCA58100013888 /* SearchPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
 		80D610771EFCA5E100013888 /* SearchProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchProtocol.swift; sourceTree = "<group>"; };
 		80D610791EFE1ABA00013888 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		8DD73B4A1F02FFAB004C2F8C /* MovieDataCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDataCell.swift; sourceTree = "<group>"; };
+		8DD73B4D1F031421004C2F8C /* FavoritesPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesPresenter.swift; sourceTree = "<group>"; };
 		B288CE51469C854589F032BC /* Pods_Cowflix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cowflix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD48644E7940AF76019000A /* Pods-Cowflix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cowflix.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cowflix/Pods-Cowflix.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,6 +93,7 @@
 			children = (
 				80A43C841EF9FD7D00C14F95 /* Data */,
 				80A43C881EF9FDD700C14F95 /* Interactor */,
+				8DD73B491F02FEFA004C2F8C /* Views */,
 				80A43C9C1EFA128300C14F95 /* Favorites */,
 				80A43C7D1EF9F4D600C14F95 /* Home */,
 				80D6106D1EFCA4D500013888 /* Serach */,
@@ -190,6 +195,7 @@
 			children = (
 				80A43C9E1EFA12DC00C14F95 /* WireFrame */,
 				80A43C9D1EFA128E00C14F95 /* View */,
+				8DD73B4C1F03138A004C2F8C /* Presenter */,
 				80A43C9F1EFA12F200C14F95 /* FavoriteProtocols.swift */,
 			);
 			name = Favorites;
@@ -242,6 +248,22 @@
 			isa = PBXGroup;
 			children = (
 				80D610751EFCA58100013888 /* SearchPresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		8DD73B491F02FEFA004C2F8C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8DD73B4A1F02FFAB004C2F8C /* MovieDataCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		8DD73B4C1F03138A004C2F8C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8DD73B4D1F031421004C2F8C /* FavoritesPresenter.swift */,
 			);
 			name = Presenter;
 			sourceTree = "<group>";
@@ -387,6 +409,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				80D610721EFCA55400013888 /* SearchWireFrame.swift in Sources */,
+				8DD73B4B1F02FFAB004C2F8C /* MovieDataCell.swift in Sources */,
 				80D610781EFCA5E100013888 /* SearchProtocol.swift in Sources */,
 				80A43C681EF9E90F00C14F95 /* HomeView.swift in Sources */,
 				80D6107A1EFE1ABA00013888 /* Constant.swift in Sources */,
@@ -399,6 +422,7 @@
 				80A43C661EF9E90F00C14F95 /* AppDelegate.swift in Sources */,
 				80D610741EFCA57300013888 /* SearchView.swift in Sources */,
 				80A43C991EFA0EE400C14F95 /* TabbarWireFrame.swift in Sources */,
+				8DD73B4E1F031421004C2F8C /* FavoritesPresenter.swift in Sources */,
 				80A43CA01EFA12F200C14F95 /* FavoriteProtocols.swift in Sources */,
 				80A43C8E1EF9FF6600C14F95 /* HomeInteractor.swift in Sources */,
 				80A43C9B1EFA127B00C14F95 /* FavoriteView.swift in Sources */,

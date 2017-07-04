@@ -85,32 +85,42 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="483"/>
                                 <color key="backgroundColor" red="0.59999999999999998" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5dX-lq-uDb">
-                                    <size key="itemSize" width="322" height="50"/>
+                                    <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="g2S-Wb-pRT">
-                                        <rect key="frame" x="26.5" y="0.0" width="322" height="50"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="g2S-Wb-pRT" customClass="MovieDataCell" customModule="Cowflix" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="322" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8uf-OH-9dW">
-                                                    <rect key="frame" x="-95" y="-39" width="240" height="128"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aZz-fB-bgH">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="29"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTq-98-A36">
-                                                    <rect key="frame" x="260" y="15" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFd-Cm-ad7">
+                                                    <rect key="frame" x="4" y="29" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </view>
+                                        <constraints>
+                                            <constraint firstItem="aZz-fB-bgH" firstAttribute="top" secondItem="g2S-Wb-pRT" secondAttribute="top" id="67A-w1-pNM"/>
+                                            <constraint firstItem="AFd-Cm-ad7" firstAttribute="centerX" secondItem="g2S-Wb-pRT" secondAttribute="centerX" id="KiD-GL-vJs"/>
+                                            <constraint firstItem="aZz-fB-bgH" firstAttribute="leading" secondItem="g2S-Wb-pRT" secondAttribute="leading" id="U3N-nM-RLj"/>
+                                            <constraint firstItem="AFd-Cm-ad7" firstAttribute="top" secondItem="aZz-fB-bgH" secondAttribute="bottom" id="YOh-qJ-JLe"/>
+                                            <constraint firstAttribute="bottom" secondItem="AFd-Cm-ad7" secondAttribute="bottom" id="b9v-93-Hcz"/>
+                                            <constraint firstAttribute="trailing" secondItem="aZz-fB-bgH" secondAttribute="trailing" id="wj4-Qi-0Lh"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="cellImage" destination="aZz-fB-bgH" id="qpr-Dr-dsC"/>
+                                            <outlet property="cellLabel" destination="AFd-Cm-ad7" id="NNr-yi-O5x"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
