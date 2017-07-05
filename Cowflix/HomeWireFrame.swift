@@ -6,12 +6,16 @@ class HomeWireFrame: HomeWireFrameProtocol {
         let navController = mainStoryboard.instantiateViewController(withIdentifier:"HomeNavigationController")
         if let view = navController.childViewControllers.first as? HomeView {
             let presenter = HomePresenter()
+            let interactor = HomeInteractor()
+            let dataManager = HomeDataManager()
             let wireFrame = HomeWireFrame()
             
             view.presenter = presenter
             presenter.view = view
             presenter.wireFrame = wireFrame
-            
+            presenter.interactor = interactor
+            interactor.presenter = presenter
+            interactor.dataManager = dataManager
             return navController
         }
         return UIViewController()
@@ -23,6 +27,13 @@ class HomeWireFrame: HomeWireFrameProtocol {
     
     func presentSearchScreen(from view: HomeViewProtocol) {
         let module = SearchWireFrame.createSearchModule()
+        if let sourceView = view as? UIViewController {
+            sourceView.present(module, animated: true, completion: nil)
+        }
+    }
+    
+    func presentDetailScreen(from view: HomeViewProtocol, with movie: MovieViewModel) {
+        let module = DetailWireFrame.createDetailModule(movie: movie)
         if let sourceView = view as? UIViewController {
             sourceView.present(module, animated: true, completion: nil)
         }
