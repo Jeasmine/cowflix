@@ -18,6 +18,8 @@
 		804A26EC1F09C489001EDF2A /* IdName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804A26EB1F09C489001EDF2A /* IdName.swift */; };
 		804A26EE1F09C7B7001EDF2A /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804A26ED1F09C7B7001EDF2A /* Language.swift */; };
 		804A26F01F09C7E1001EDF2A /* Countrie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804A26EF1F09C7E1001EDF2A /* Countrie.swift */; };
+		805A76A91F0C761C00CDEC85 /* SearchDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805A76A81F0C761C00CDEC85 /* SearchDataManager.swift */; };
+		805A76AB1F0C8DDF00CDEC85 /* SearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805A76AA1F0C8DDF00CDEC85 /* SearchInteractor.swift */; };
 		80A43C661EF9E90F00C14F95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A43C651EF9E90F00C14F95 /* AppDelegate.swift */; };
 		80A43C681EF9E90F00C14F95 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A43C671EF9E90F00C14F95 /* HomeView.swift */; };
 		80A43C6B1EF9E90F00C14F95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A43C691EF9E90F00C14F95 /* Main.storyboard */; };
@@ -57,6 +59,8 @@
 		804A26EB1F09C489001EDF2A /* IdName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdName.swift; sourceTree = "<group>"; };
 		804A26ED1F09C7B7001EDF2A /* Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		804A26EF1F09C7E1001EDF2A /* Countrie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Countrie.swift; sourceTree = "<group>"; };
+		805A76A81F0C761C00CDEC85 /* SearchDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchDataManager.swift; sourceTree = "<group>"; };
+		805A76AA1F0C8DDF00CDEC85 /* SearchInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchInteractor.swift; sourceTree = "<group>"; };
 		80A43C621EF9E90F00C14F95 /* Cowflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cowflix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80A43C651EF9E90F00C14F95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80A43C671EF9E90F00C14F95 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -139,6 +143,14 @@
 				804A26E81F09B234001EDF2A /* DetailDataManager.swift */,
 			);
 			name = DetailDataManager;
+			sourceTree = "<group>";
+		};
+		805A76A71F0C760900CDEC85 /* SearchManager */ = {
+			isa = PBXGroup;
+			children = (
+				805A76A81F0C761C00CDEC85 /* SearchDataManager.swift */,
+			);
+			name = SearchManager;
 			sourceTree = "<group>";
 		};
 		80A43C591EF9E90F00C14F95 = {
@@ -233,6 +245,7 @@
 			children = (
 				80A43C8D1EF9FF6600C14F95 /* HomeInteractor.swift */,
 				8034626E1F05EEC700E64969 /* DetailInteractor.swift */,
+				805A76AA1F0C8DDF00CDEC85 /* SearchInteractor.swift */,
 			);
 			name = Interactor;
 			sourceTree = "<group>";
@@ -352,6 +365,7 @@
 		80D77E1E1F00AF16003481E0 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				805A76A71F0C760900CDEC85 /* SearchManager */,
 				80D77E191F00AE6F003481E0 /* HomeDataManager */,
 				804A26EA1F09B238001EDF2A /* DetailDataManager */,
 			);
@@ -502,6 +516,8 @@
 			files = (
 				80D610721EFCA55400013888 /* SearchWireFrame.swift in Sources */,
 				803462691F05E37800E64969 /* DetailView.swift in Sources */,
+				805A76AB1F0C8DDF00CDEC85 /* SearchInteractor.swift in Sources */,
+				805A76A91F0C761C00CDEC85 /* SearchDataManager.swift in Sources */,
 				8034626F1F05EEC700E64969 /* DetailInteractor.swift in Sources */,
 				804A26EE1F09C7B7001EDF2A /* Language.swift in Sources */,
 				80D610781EFCA5E100013888 /* SearchProtocol.swift in Sources */,
