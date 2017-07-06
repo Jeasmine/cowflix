@@ -231,7 +231,7 @@
             </objects>
             <point key="canvasLocation" x="-63" y="-1429"/>
         </scene>
-        <!--Favorite View-->
+        <!--Favorites-->
         <scene sceneID="dF9-hC-ExX">
             <objects>
                 <viewController id="LV2-Jb-NsK" customClass="FavoriteView" customModule="Cowflix" customModuleProvider="target" sceneMemberID="viewController">
@@ -242,13 +242,82 @@
                     <view key="view" contentMode="scaleToFill" id="Ee5-qW-Hma">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bRK-Ju-5dz">
+                                <rect key="frame" x="0.0" y="92" width="375" height="483"/>
+                                <color key="backgroundColor" red="0.59999999999999998" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5dX-lq-uDb">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="g2S-Wb-pRT" customClass="MovieCustomCell" customModule="Cowflix" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aZz-fB-bgH">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="29"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFd-Cm-ad7">
+                                                    <rect key="frame" x="4" y="29" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="aZz-fB-bgH" firstAttribute="top" secondItem="g2S-Wb-pRT" secondAttribute="top" id="67A-w1-pNM"/>
+                                            <constraint firstItem="AFd-Cm-ad7" firstAttribute="centerX" secondItem="g2S-Wb-pRT" secondAttribute="centerX" id="KiD-GL-vJs"/>
+                                            <constraint firstItem="aZz-fB-bgH" firstAttribute="leading" secondItem="g2S-Wb-pRT" secondAttribute="leading" id="U3N-nM-RLj"/>
+                                            <constraint firstItem="AFd-Cm-ad7" firstAttribute="top" secondItem="aZz-fB-bgH" secondAttribute="bottom" id="YOh-qJ-JLe"/>
+                                            <constraint firstAttribute="bottom" secondItem="AFd-Cm-ad7" secondAttribute="bottom" id="b9v-93-Hcz"/>
+                                            <constraint firstAttribute="trailing" secondItem="aZz-fB-bgH" secondAttribute="trailing" id="wj4-Qi-0Lh"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="cellImage" destination="aZz-fB-bgH" id="qpr-Dr-dsC"/>
+                                            <outlet property="cellLabel" destination="AFd-Cm-ad7" id="NNr-yi-O5x"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="wan-p8-5jJ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="29"/>
+                                <segments>
+                                    <segment title="Movies"/>
+                                    <segment title="Series"/>
+                                </segments>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="movieSerieSwitch:" destination="LV2-Jb-NsK" eventType="valueChanged" id="ZHg-i4-era"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
                         <color key="backgroundColor" red="0.59999999999999998" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wan-p8-5jJ" firstAttribute="top" secondItem="ofL-TG-Sgy" secondAttribute="bottom" id="3hH-6n-Qlr"/>
+                            <constraint firstItem="bRK-Ju-5dz" firstAttribute="top" secondItem="wan-p8-5jJ" secondAttribute="bottom" id="3zz-9G-QeN"/>
+                            <constraint firstItem="wan-p8-5jJ" firstAttribute="centerX" secondItem="Ee5-qW-Hma" secondAttribute="centerX" id="4xi-7u-W1I"/>
+                            <constraint firstItem="bRK-Ju-5dz" firstAttribute="width" secondItem="Ee5-qW-Hma" secondAttribute="width" id="HHJ-3k-XKb"/>
+                            <constraint firstItem="bRK-Ju-5dz" firstAttribute="centerY" secondItem="Ee5-qW-Hma" secondAttribute="centerY" id="NZK-ej-BhR"/>
+                            <constraint firstItem="bRK-Ju-5dz" firstAttribute="centerX" secondItem="Ee5-qW-Hma" secondAttribute="centerX" id="Zor-u8-pcV"/>
+                            <constraint firstItem="wan-p8-5jJ" firstAttribute="width" secondItem="Ee5-qW-Hma" secondAttribute="width" id="oVX-YO-fXn"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="acu-M5-OoB"/>
+                    <navigationItem key="navigationItem" title="Favorites" id="acu-M5-OoB"/>
+                    <connections>
+                        <outlet property="collectionView" destination="bRK-Ju-5dz" id="Pdq-6A-uig"/>
+                        <outlet property="favoriteSwitch" destination="wan-p8-5jJ" id="2PB-tb-AyI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tqa-VI-5DA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1329" y="-1026"/>
+            <point key="canvasLocation" x="1796" y="-1027.736131934033"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8Rt-C2-Gd9">
@@ -302,7 +371,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4NE-5X-U3k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2449" y="-1789"/>
+            <point key="canvasLocation" x="2566" y="-1791"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dLJ-SF-1uh">

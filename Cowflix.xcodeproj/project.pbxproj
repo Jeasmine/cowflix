@@ -22,10 +22,10 @@
 		805A76AB1F0C8DDF00CDEC85 /* SearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805A76AA1F0C8DDF00CDEC85 /* SearchInteractor.swift */; };
 		808044801F0EC90E00D9EC92 /* TvShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8080447F1F0EC90E00D9EC92 /* TvShow.swift */; };
 		808044821F0ECBBB00D9EC92 /* TvShowResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808044811F0ECBBB00D9EC92 /* TvShowResult.swift */; };
+		808044831F0EF07300D9EC92 /* Cowflix.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 80A43C6C1EF9E90F00C14F95 /* Cowflix.xcdatamodeld */; };
 		80A43C661EF9E90F00C14F95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A43C651EF9E90F00C14F95 /* AppDelegate.swift */; };
 		80A43C681EF9E90F00C14F95 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A43C671EF9E90F00C14F95 /* HomeView.swift */; };
 		80A43C6B1EF9E90F00C14F95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A43C691EF9E90F00C14F95 /* Main.storyboard */; };
-		80A43C6E1EF9E90F00C14F95 /* Cowflix.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 80A43C6C1EF9E90F00C14F95 /* Cowflix.xcdatamodeld */; };
 		80A43C731EF9E90F00C14F95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A43C711EF9E90F00C14F95 /* LaunchScreen.storyboard */; };
 		80A43C7F1EF9F6CA00C14F95 /* HomeWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A43C7E1EF9F6CA00C14F95 /* HomeWireFrame.swift */; };
 		80A43C811EF9F75700C14F95 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A43C801EF9F75700C14F95 /* HomeProtocols.swift */; };
@@ -520,6 +520,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				808044831F0EF07300D9EC92 /* Cowflix.xcdatamodeld in Sources */,
 				80D610721EFCA55400013888 /* SearchWireFrame.swift in Sources */,
 				803462691F05E37800E64969 /* DetailView.swift in Sources */,
 				805A76AB1F0C8DDF00CDEC85 /* SearchInteractor.swift in Sources */,
@@ -537,7 +538,6 @@
 				80A43C831EF9FB9C00C14F95 /* HomePresenter.swift in Sources */,
 				80D610761EFCA58100013888 /* SearchPresenter.swift in Sources */,
 				80D77E1B1F00AE96003481E0 /* HomeDataManager.swift in Sources */,
-				80A43C6E1EF9E90F00C14F95 /* Cowflix.xcdatamodeld in Sources */,
 				8034626B1F05E39E00E64969 /* DetailProtocols.swift in Sources */,
 				80A43C661EF9E90F00C14F95 /* AppDelegate.swift in Sources */,
 				80D610741EFCA57300013888 /* SearchView.swift in Sources */,
