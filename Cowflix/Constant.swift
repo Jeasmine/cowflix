@@ -9,3 +9,8 @@ struct APIConstants {
     
     static let imageBaseUrl = "https://image.tmdb.org/t/p/w600/"
 }
+
+enum MovieType {
+    case movie
+    case tvshow
+}

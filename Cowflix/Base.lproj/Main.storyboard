@@ -88,8 +88,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="An Amazon princess comes to the world of Man to become the greatest of the female superheroes." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u08-Ko-w8n">
-                                <rect key="frame" x="7" y="355" width="359" height="61"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An Amazon princess comes to the world of Man to become the greatest of the female superheroes." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u08-Ko-w8n">
+                                <rect key="frame" x="8" y="353.5" width="359" height="61"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="28" id="0Vf-fr-gqd"/>
                                 </constraints>
@@ -158,39 +158,63 @@
         <scene sceneID="aZF-tE-IKI">
             <objects>
                 <viewController id="U9r-P2-82B" customClass="SearchView" customModule="Cowflix" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Lkb-Br-nuR">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ACN-np-gJ7"/>
+                        <viewControllerLayoutGuide type="bottom" id="rAj-7g-4tp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ycg-Da-dHT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Nme-Hf-Elf">
+                                <rect key="frame" x="0.0" y="108" width="375" height="559"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="edX-vu-jWu">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="U9r-P2-82B" id="xG6-qL-m3m"/>
+                                    <outlet property="delegate" destination="U9r-P2-82B" id="1oA-JV-Dxm"/>
+                                </connections>
+                            </collectionView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Pia-M9-WTz">
+                                <rect key="frame" x="20" y="72" width="335" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="S4O-Ic-RIH"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                                <connections>
+                                    <action selector="onChangeCategory:" destination="U9r-P2-82B" eventType="valueChanged" id="y4d-Sn-Mq8"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vFf-Ug-SaH">
-                            <size key="itemSize" width="50" height="50"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="eub-5l-Fyz">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </view>
-                            </collectionViewCell>
-                        </cells>
-                        <connections>
-                            <outlet property="dataSource" destination="U9r-P2-82B" id="lsu-8N-nhf"/>
-                            <outlet property="delegate" destination="U9r-P2-82B" id="zsS-O3-fPs"/>
-                        </connections>
-                    </collectionView>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Pia-M9-WTz" secondAttribute="trailing" constant="20" symbolic="YES" id="5vE-8e-JHp"/>
+                            <constraint firstItem="Pia-M9-WTz" firstAttribute="leading" secondItem="ycg-Da-dHT" secondAttribute="leading" constant="20" symbolic="YES" id="JzA-y2-uHm"/>
+                            <constraint firstItem="Nme-Hf-Elf" firstAttribute="leading" secondItem="ycg-Da-dHT" secondAttribute="leading" id="Mev-pd-oLy"/>
+                            <constraint firstItem="Nme-Hf-Elf" firstAttribute="top" secondItem="Pia-M9-WTz" secondAttribute="bottom" constant="8" symbolic="YES" id="Uyy-KU-cfd"/>
+                            <constraint firstItem="rAj-7g-4tp" firstAttribute="top" secondItem="Nme-Hf-Elf" secondAttribute="bottom" id="nEC-we-nQM"/>
+                            <constraint firstAttribute="trailing" secondItem="Nme-Hf-Elf" secondAttribute="trailing" id="wQT-A9-iOr"/>
+                            <constraint firstItem="Pia-M9-WTz" firstAttribute="top" secondItem="ACN-np-gJ7" secondAttribute="bottom" constant="8" symbolic="YES" id="wlN-iN-RV6"/>
+                        </constraints>
+                    </view>
                     <navigationItem key="navigationItem" id="1IJ-Ds-bWx"/>
                     <connections>
-                        <outlet property="collectionView" destination="Lkb-Br-nuR" id="aHL-ZD-wM0"/>
+                        <outlet property="categorySelection" destination="Pia-M9-WTz" id="XQg-zg-pSV"/>
+                        <outlet property="collectionView" destination="Nme-Hf-Elf" id="5P8-fw-qtJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cm4-xv-v53" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2830" y="-1027"/>
+            <point key="canvasLocation" x="2829.5999999999999" y="-1027.736131934033"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="2BN-I4-5ON">

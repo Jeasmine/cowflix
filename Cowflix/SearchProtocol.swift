@@ -11,7 +11,9 @@ protocol SearchWireFrameProtocol: class {
 protocol SearchViewProtocol: class {
     var presenter: SearchPresenterProtocol? { get set }
     
-    func reloadInterface(with movies: [MovieViewModel])
+    func reloadMovieInterface(with movies: [MovieViewModel])
+    
+    func reloadTvShowsInterface(with tvShows: [MovieViewModel])
 }
 
 protocol SearchPresenterProtocol: class {
@@ -19,7 +21,7 @@ protocol SearchPresenterProtocol: class {
     var interactor: SearchInteractorInputProtocol? { get set }
     var wireFrame: SearchWireFrameProtocol? { get set }
     
-    func search(name: String)
+    func search(type: MovieType, name: String)
     
     func backAction()
     
@@ -27,7 +29,9 @@ protocol SearchPresenterProtocol: class {
 }
 
 protocol SearchInteractorOutputProtocol: class {
-     func didRetrieveMovies(_ movies: [Movie])
+    func didRetrieveMovies(_ movies: [Movie])
+    
+    func didRetrieveShows(_ tvShows: [TvShow])
 }
 
 protocol SearchInteractorInputProtocol: class {
@@ -35,9 +39,13 @@ protocol SearchInteractorInputProtocol: class {
     var dataManager: SearchDataManagerInputProtocol? { get set }
     
     func retrieveMovies(movieName: String)
+    
+    func retrieveTvShows(tvShowName: String)
 }
 
 protocol SearchDataManagerInputProtocol: class {
     
     func retrieveSearchedMovies(query: String, completationHandler:@escaping MovieSearchCompletionHandler)
+    
+    func retrieveSearchedTvShows(query: String, completationHandler: @escaping TvShowSearchCompletionHandler)
 }

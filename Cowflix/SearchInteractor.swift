@@ -13,4 +13,14 @@ class SearchInteractor: SearchInteractorInputProtocol {
             }
         }
     }
+
+    func retrieveTvShows(tvShowName: String) {
+        dataManager?.retrieveSearchedTvShows(query: tvShowName) { (result) in
+            if let tvShows = result.result.value?.data {
+                self.presenter?.didRetrieveShows(tvShows)
+            } else {
+                self.presenter?.didRetrieveShows([])
+            }
+        }
+    }
 }

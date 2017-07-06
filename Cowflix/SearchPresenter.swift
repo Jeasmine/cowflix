@@ -5,8 +5,13 @@ class SearchPresenter: SearchPresenterProtocol {
     var interactor: SearchInteractorInputProtocol?
     var wireFrame: SearchWireFrameProtocol?
     
-    func search(name: String) {
-        interactor?.retrieveMovies(movieName: name)
+    func search(type: MovieType,name: String) {
+        switch type {
+        case .tvshow:
+            interactor?.retrieveTvShows(tvShowName: name)
+        default:
+            interactor?.retrieveMovies(movieName: name)
+        }
     }
     
     func backAction() {
@@ -23,8 +28,14 @@ class SearchPresenter: SearchPresenterProtocol {
 extension SearchPresenter: SearchInteractorOutputProtocol {
     
     func didRetrieveMovies(_ movies: [Movie]) {
-        view?.reloadInterface(with: movies.map() {
+        view?.reloadMovieInterface(with: movies.map() {
             return MovieViewModel(id: $0.id, title: $0.title, imagePath: $0.posterPath, image: nil)
+        })
+    }
+    
+    func didRetrieveShows(_ tvShows: [TvShow]) {
+        view?.reloadTvShowsInterface(with: tvShows.map() {
+            return MovieViewModel(id: $0.id, title: $0.name, imagePath: $0.posterPath, image: nil)
         })
     }
 }

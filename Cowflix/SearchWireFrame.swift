@@ -30,7 +30,6 @@ class SearchWireFrame: SearchWireFrameProtocol {
         if let sourceView = view as? UIViewController {
             sourceView.present(module, animated: true, completion: nil)
         }
-
     }
     
     func dismissDetailInterface(from view: SearchViewProtocol) {

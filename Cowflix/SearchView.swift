@@ -8,14 +8,17 @@ class SearchView: UIViewController {
     let reuseIdentifier = "movieCustomCell"
     
     var movieList: [MovieViewModel] = []
+    var tvShowList: [MovieViewModel] = []
     let searchBar = UISearchBar()
     var presenter: SearchPresenterProtocol?
     
+    @IBOutlet weak var categorySelection: UISegmentedControl!
     @IBOutlet var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         collectionView.register(UINib(nibName: nibFileName, bundle: nil), forCellWithReuseIdentifier: reuseIdentifier)
         makeBackButton()
+        self.automaticallyAdjustsScrollViewInsets = false
         
         searchBar.placeholder = "Search..."
         searchBar.delegate = self
@@ -24,8 +27,10 @@ class SearchView: UIViewController {
         
         self.navigationItem.titleView = searchBar
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: nil, style: UIBarButtonItemStyle.plain, target: self, action: nil)
-        
-        presenter?.search(name: "Woman")
+    }
+    
+    @IBAction func onChangeCategory(_ sender: UISegmentedControl) {
+         collectionView.reloadData()
     }
     
     func makeBackButton() {
@@ -35,12 +40,25 @@ class SearchView: UIViewController {
     func didClickOnBackButton() {
         presenter?.backAction()
     }
+    
+    func getSegmentType() -> MovieType {
+        return categorySelection.selectedSegmentIndex == 0 ? MovieType.movie : MovieType.tvshow
+    }
+    
+    func getMovie(position: Int) -> MovieViewModel {
+        return getSegmentType() == MovieType.movie ? movieList[position] : tvShowList[position]
+    }
 }
 
 extension SearchView: SearchViewProtocol {
     
-    func reloadInterface(with movies: [MovieViewModel]) {
+    func reloadMovieInterface(with movies: [MovieViewModel]) {
         movieList = movies
+        collectionView.reloadData()
+    }
+    
+    func reloadTvShowsInterface(with tvShows: [MovieViewModel]) {
+        tvShowList = tvShows
         collectionView.reloadData()
     }
 }
@@ -68,7 +86,7 @@ extension SearchView: UISearchBarDelegate {
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         if let text = searchBar.text {
-            presenter?.search(name: text)
+            presenter?.search(type: getSegmentType(), name: text)
         }
     }
 }
@@ -80,32 +98,37 @@ extension SearchView: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return movieList.count
+        return getSegmentType() == MovieType.movie ? movieList.count : tvShowList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! MovieCustomCell
-        let movie = movieList[indexPath.row]
+        let movie = getMovie(position: indexPath.row)
         if let image = movie.image {
             cell.movieImage.image = image
         } else {
-            let url = URL(string: APIConstants.imageBaseUrl + movie.imagePath)!
-            let placeholderImage = UIImage(named: "image_placeholder")!
-            
-            cell.movieImage.af_setImage(withURL: url, placeholderImage: placeholderImage, completion: { data in
-                if let image = data.value {
-                    self.movieList[indexPath.row].image = image
-                }
-            })
+            downloadImage(cell: cell, movie: movie, indexPath: indexPath)
         }
         return cell
+    }
+    
+    private func downloadImage(cell: MovieCustomCell, movie: MovieViewModel, indexPath: IndexPath) {
+        let url = URL(string: APIConstants.imageBaseUrl + movie.imagePath)!
+        let placeholderImage = UIImage(named: "image_placeholder")!
+        
+        cell.movieImage.af_setImage(withURL: url, placeholderImage: placeholderImage, completion: { data in
+            if let image = data.value {
+                var movie = self.getMovie(position: indexPath.row)
+                movie.image = image
+            }
+        })
     }
 }
 
 extension SearchView: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        presenter?.detail(from: self, with: movieList[indexPath.row])
+        presenter?.detail(from: self, with: getMovie(position: indexPath.row))
     }
 }
 

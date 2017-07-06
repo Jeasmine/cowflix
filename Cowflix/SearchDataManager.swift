@@ -2,6 +2,7 @@ import Alamofire
 import AlamofireObjectMapper
 
 typealias MovieSearchCompletionHandler = (DataResponse<MovieResult>) -> Void
+typealias TvShowSearchCompletionHandler = (DataResponse<TvShowResult>) -> Void
 
 class SearchDataManager: SearchDataManagerInputProtocol {
     
@@ -18,6 +19,17 @@ class SearchDataManager: SearchDataManagerInputProtocol {
                      parameters: ["api_key": APIConstants.key, "language": "en-US",
                                   "query" : query, "page": 1, "include_adult": "false"])
             .responseObject { (response: DataResponse<MovieResult>) in
+                completationHandler(response)
+        }
+    }
+    
+    func retrieveSearchedTvShows(query: String, completationHandler: @escaping TvShowSearchCompletionHandler) {
+        Alamofire
+            .request(URL(string: baseUrl + "tv")!,
+                     method: .get,
+                     parameters: ["api_key": APIConstants.key, "language": "en-US",
+                                  "query" : query, "page": 1, "include_adult": "false"])
+            .responseObject { (response: DataResponse<TvShowResult>) in
                 completationHandler(response)
         }
     }
