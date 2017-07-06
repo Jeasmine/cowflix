@@ -24,7 +24,7 @@ extension FavoriteView: FavoriteViewProtocol {
 extension FavoriteView: UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 3
+        return 2
     }
 
     func collectionView(_ collectionView: UICollectionView,
