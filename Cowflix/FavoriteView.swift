@@ -6,8 +6,8 @@ class FavoriteView: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var favoriteSwitch: UISegmentedControl!
     
-    var favoriteMovies: [MovieDataCell] = []
-    var favoriteSeries: [MovieDataCell] = []
+    var favoriteMovies: [MovieViewModel] = []
+    var favoriteSeries: [MovieViewModel] = []
     
     @IBAction func movieSerieSwitch(_ sender: UISegmentedControl) {
     // Si toco el switch debo cambiar la collection que muestro
@@ -15,6 +15,10 @@ class FavoriteView: UIViewController {
         print(favoriteSwitch.titleForSegment(at: favoriteSwitch.selectedSegmentIndex)!)
         
     }
+}
+
+extension FavoriteView: FavoriteViewProtocol {
+    
 }
 
 extension FavoriteView: UICollectionViewDataSource {
@@ -47,14 +51,14 @@ extension FavoriteView: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView,
                         didSelectItemAt indexPath: IndexPath){
         
-        var list: [MovieDataCell] = []
+        var list: [MovieViewModel] = []
         if (favoriteSwitch.selectedSegmentIndex == 0) {
             list = favoriteMovies
         } else {
             list = favoriteSeries
         }
-//        presenter?.detail(from: self, with: list[indexPath.row])
-        presenter?.detail(with: list[indexPath.row])
+        
+        presenter?.detail(from: self, with: list[indexPath.row])
     }
     
 }

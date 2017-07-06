@@ -12,10 +12,10 @@ class FavoriteWireFrame: FavoriteWireFrameProtocol {
         return UIStoryboard(name: "Main", bundle: Bundle.main)
     }
     
-    func presentDetailScreen(with movie: MovieDataCell){
-//        let module = DetailWireFrame.createDetailModule(movie: movie)
-//        if let sourceView = view as? UIViewController {
-//            sourceView.present(module, animated: true, completion: nil)
-//        }
+    func presentDetailScreen(from view: FavoriteViewProtocol, with movie: MovieViewModel){
+        let module = DetailWireFrame.createDetailModule(movie: movie)
+        if let sourceView = view as? UIViewController {
+            sourceView.present(module, animated: true, completion: nil)
+        }
     }
 }

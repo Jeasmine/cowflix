@@ -3,7 +3,7 @@ import UIKit
 protocol FavoriteWireFrameProtocol: class {
     static func createFavoriteModule() -> UIViewController
     
-    func presentDetailScreen(with movie: MovieDataCell)
+    func presentDetailScreen(from view: FavoriteViewProtocol, with movie: MovieViewModel)
 }
 
 protocol FavoriteViewProtocol: class {
@@ -16,7 +16,7 @@ protocol FavoritePresenterProtocol: class {
     var wireFrame: FavoriteWireFrameProtocol? { get set }
     
     func viewDidLoad()
-    func detail(with movie: MovieDataCell)
+    func detail(from view: FavoriteViewProtocol, with movie: MovieViewModel)
 }
 
 protocol FavoriteInteractorOutputProtocol: class {}
