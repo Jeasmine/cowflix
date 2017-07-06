@@ -187,8 +187,8 @@
                                     <constraint firstAttribute="height" constant="28" id="S4O-Ic-RIH"/>
                                 </constraints>
                                 <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
+                                    <segment title="Movie"/>
+                                    <segment title="Tv Show"/>
                                 </segments>
                                 <connections>
                                     <action selector="onChangeCategory:" destination="U9r-P2-82B" eventType="valueChanged" id="y4d-Sn-Mq8"/>
