@@ -17,6 +17,11 @@ class DetailPresenter: DetailPresenterProtocol {
             wireFrame?.dismissDetailInterface(from: view)
         }
     }
+    
+    func saveFavorite(movie: MovieViewModel) {
+        let result = interactor?.saveFavorite(movie: movie) ?? false
+        print(result)
+    }
 }
 
 extension DetailPresenter: DetailInteractorOutputProtocol {

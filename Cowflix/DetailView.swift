@@ -18,13 +18,19 @@ class DetailView: UIViewController {
         }
     }
     
+    @IBAction func didClickFavoriteButton(_ sender: Any) {
+        if let viewModel = movie {
+            presenter?.saveFavorite(movie: viewModel)
+        }
+    }
+    
     @IBAction func didClickOnBackButton(_ sender: Any) {
         presenter?.backAction()
     }
 }
 
 extension DetailView: DetailViewProtocol {
-
+    
     func reloadInterface(with detail: MovieDetailViewModel) {
         movieName.text = detail.title
     }

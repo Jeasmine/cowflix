@@ -29,13 +29,13 @@ extension SearchPresenter: SearchInteractorOutputProtocol {
     
     func didRetrieveMovies(_ movies: [Movie]) {
         view?.reloadMovieInterface(with: movies.map() {
-            return MovieViewModel(id: Int($0.apiId), title: $0.title, imagePath: $0.imagePath ?? "", image: nil)
+            return MovieViewModel(id: $0.id, type: .movie, title: $0.title, imagePath: $0.imagePath, overview: $0.overview, image: nil)
         })
     }
     
     func didRetrieveShows(_ tvShows: [TvShow]) {
         view?.reloadTvShowsInterface(with: tvShows.map() {
-            return MovieViewModel(id: $0.id, title: $0.name, imagePath: $0.posterPath, image: nil)
+            return MovieViewModel(id: $0.id, type: .tvshow, title: $0.name, imagePath: $0.imagePath, overview: $0.overview, image: nil)
         })
     }
 }

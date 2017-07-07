@@ -14,3 +14,9 @@ enum MovieType {
     case movie
     case tvshow
 }
+
+enum PersistenceError: Error {
+    case managedObjectContextNotFound
+    case couldNotCreateObject
+    case objectNotFound
+}

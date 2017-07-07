@@ -14,8 +14,8 @@ class HomeDataManager: HomeDataManagerInputProtocol {
     func retrieveNowPlayingMovies(completationHandler: @escaping MovieResultCompletionHandler) {
         Alamofire
             .request(URL(string: baseUrl + "now_playing")!,
-                          method: .get,
-                          parameters: ["api_key": APIConstants.key, "language": "en-US", "page": 1])
+                     method: .get,
+                     parameters: ["api_key": APIConstants.key, "language": "en-US", "page": 1])
             .responseObject { (response: DataResponse<MovieResult>) in
                 completationHandler(response)
         }

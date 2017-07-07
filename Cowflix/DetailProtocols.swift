@@ -21,6 +21,8 @@ protocol DetailPresenterProtocol: class {
     func backAction()
     
     func loadDetail(with movieId: Int)
+    
+    func saveFavorite(movie: MovieViewModel)
 }
 
 protocol DetailInteractorOutputProtocol: class {
@@ -30,11 +32,20 @@ protocol DetailInteractorOutputProtocol: class {
 protocol DetailInteractorInputProtocol: class {
     var presenter: DetailInteractorOutputProtocol? { get set }
     var dataManager: DetailDataManagerInputProtocol? { get set }
+    var localDataManager: DetailLocalDataManagerInputProtocol? { get set }
     
     func retrieveDetail(movieId: Int)
+    
+    func saveFavorite(movie: MovieViewModel) -> Bool
 }
 
 protocol DetailDataManagerInputProtocol: class {
     
     func retrieveMovieDetail(id: Int, completationHandler:@escaping MovieDetailCompletionHandler)
 }
+
+protocol DetailLocalDataManagerInputProtocol: class {
+    
+    func createFavorite(movie: MovieViewModel) throws -> Bool
+}
+

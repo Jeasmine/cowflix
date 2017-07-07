@@ -1,16 +1,11 @@
 import ObjectMapper
 import AlamofireImage
-import CoreData
 
-@objc(Movie)
-class Movie: NSManagedObject, Mappable {
+class Movie: Mappable {
     
-    @NSManaged var apiId: Int16
-    @NSManaged var type: Int16
-    @NSManaged var title: String
-    @NSManaged var imagePath: String?
-    @NSManaged var synopsis: String?
-    
+    var id = 0
+    var title = ""
+    var imagePath = ""
     var voteCount: Int?
     var video: Bool?
     var voteAverage: Int?
@@ -20,22 +15,14 @@ class Movie: NSManagedObject, Mappable {
     var genreIds: [Int]?
     var backdropPath: String?
     var adult: Bool?
+    var overview = ""
     var releaseDate: String?
     
-    override init(entity: NSEntityDescription, insertInto context: NSManagedObjectContext?) {
-        super.init(entity: entity, insertInto: context)
-    }
-    
-    required init?(map: Map) {
-        let ctx = CoreDataPersistent.managedObjectContext
-        let entity = NSEntityDescription.entity(forEntityName: "Movie", in: ctx!)
-        super.init(entity: entity!, insertInto: ctx)
-        
-        mapping(map: map)
+    required init?(map: Map){
     }
     
     func mapping(map: Map) {
-        apiId <- map["id"]
+        id <- map["id"]
         voteCount <- map["vote_count"]
         video <- map["video"]
         voteAverage <- map["vote_average"]
@@ -47,15 +34,17 @@ class Movie: NSManagedObject, Mappable {
         genreIds <- map["genre_ids"]
         backdropPath <- map["backdrop_path"]
         adult <- map["adult"]
-        synopsis <- map["overview"]
+        overview <- map["overview"]
         releaseDate <- map["release_date"]
     }
 }
 
 public struct MovieViewModel {
     var id = 0
+    var type: MovieType
     var title = ""
     var imagePath = ""
+    var overview = ""
     var image: Image? = nil
 }
 

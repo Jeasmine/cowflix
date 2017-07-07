@@ -142,6 +142,11 @@
                                 <action selector="didClickOnBackButton:" destination="Kro-SG-iex" id="hxS-BM-7uw"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="no_favorite" id="xXh-9v-wAI">
+                            <connections>
+                                <action selector="didClickFavoriteButton:" destination="Kro-SG-iex" id="Urx-Q3-lGm"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="genre" destination="IWi-Cq-HGf" id="9fw-bG-LuH"/>
@@ -392,4 +397,7 @@
             <point key="canvasLocation" x="2449" y="-1027"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="no_favorite" width="24" height="24"/>
+    </resources>
 </document>

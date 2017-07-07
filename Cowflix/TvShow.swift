@@ -8,7 +8,7 @@ class TvShow: Mappable {
     var name = ""
     var voteCount = 0
     var voteAverage = 0
-    var posterPath = ""
+    var imagePath = ""
     var firstAirDate = ""
     var popularity = 0.0
     var genreIds: [Int]?
@@ -26,7 +26,7 @@ class TvShow: Mappable {
         name <- map["name"]
         voteCount <- map["vote_count"]
         voteAverage <- map["vote_average"]
-        posterPath <- map["poster_path"]
+        imagePath <- map["poster_path"]
         firstAirDate <- map["first_air_date"]
         popularity <- map["popularity"]
         genreIds <- map["genre_ids"]
@@ -35,19 +35,4 @@ class TvShow: Mappable {
         overview <- map["overview"]
         originCountry <- map["origin_country"]
     }
-}
-
-public struct TvShowViewModel {
-    var id = 0
-    var title = ""
-    var imagePath = ""
-    var image: Image? = nil
-}
-
-public func <(lhs: TvShowViewModel, rhs: TvShowViewModel) -> Bool {
-    return lhs.title.lowercased() < rhs.title.lowercased()
-}
-
-public func >(lhs: TvShowViewModel, rhs: TvShowViewModel) -> Bool {
-    return lhs.title.lowercased() > rhs.title.lowercased()
 }

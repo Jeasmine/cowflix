@@ -8,6 +8,7 @@ class DetailWireFrame: DetailWireFrameProtocol {
             let presenter = DetailPresenter()
             let interactor = DetailInteractor()
             let dataManager = DetailDataManager()
+            let localDataManager = DetailLocalDataManager()
             let wireFrame = DetailWireFrame()
             
             view.movie = movie
@@ -17,6 +18,7 @@ class DetailWireFrame: DetailWireFrameProtocol {
             presenter.interactor = interactor
             interactor.presenter = presenter
             interactor.dataManager = dataManager
+            interactor.localDataManager = localDataManager
             return navController
         }
         return UIViewController()

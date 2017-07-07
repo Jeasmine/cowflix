@@ -23,7 +23,7 @@ extension HomePresenter: HomeInteractorOutputProtocol {
     
     func didRetrieveMovies(_ movies: [Movie]) {
         view?.reloadInterface(with: movies.map() {
-            return MovieViewModel(id: Int($0.apiId), title: $0.title, imagePath: $0.imagePath ?? "", image: nil)
+            return MovieViewModel(id: $0.id, type: .movie, title: $0.title, imagePath: $0.imagePath, overview: $0.overview, image: nil)
         })
     }
 }
