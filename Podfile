@@ -9,4 +9,6 @@ target ‘Cowflix’ do
   pod 'Alamofire', '~> 4.4'
   pod 'AlamofireImage', '~> 3.1'
   pod 'AlamofireObjectMapper', '~> 4.0'
+  pod 'Eureka'
+  
 end

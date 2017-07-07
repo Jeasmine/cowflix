@@ -5,6 +5,7 @@ protocol HomeWireFrameProtocol: class {
     static func createHomeModule() -> UIViewController
     
     func presentSearchScreen(from view: HomeViewProtocol)
+    
     func presentDetailScreen(from view: HomeViewProtocol, with movie: MovieViewModel)
 }
 
@@ -39,5 +40,5 @@ protocol HomeInteractorInputProtocol: class {
 
 protocol HomeDataManagerInputProtocol: class {
     
-    func retrieveNowPlayingMovies(completationHandler:@escaping MovieResultCompletionHandler)
+    func retrieveNowPlayingMovies(completationHandler: @escaping MovieResultCompletionHandler)
 }

@@ -45,7 +45,7 @@ protocol SearchInteractorInputProtocol: class {
 
 protocol SearchDataManagerInputProtocol: class {
     
-    func retrieveSearchedMovies(query: String, completationHandler:@escaping MovieSearchCompletionHandler)
+    func retrieveSearchedMovies(query: String, completationHandler: @escaping MovieSearchCompletionHandler)
     
     func retrieveSearchedTvShows(query: String, completationHandler: @escaping TvShowSearchCompletionHandler)
 }

@@ -18,7 +18,6 @@ class SearchView: UIViewController {
     override func viewDidLoad() {
         collectionView.register(UINib(nibName: nibFileName, bundle: nil), forCellWithReuseIdentifier: reuseIdentifier)
         makeBackButton()
-        self.automaticallyAdjustsScrollViewInsets = false
         
         searchBar.placeholder = "Search..."
         searchBar.delegate = self

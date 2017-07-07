@@ -5,7 +5,11 @@ struct APIConstants {
     static let baseUrl = "https://api.themoviedb.org/3/"
     
     static let baseUrlMovie = "\(baseUrl)movie/"
+    static let baseUrlGenre = "\(baseUrl)genre/"
+    static let baseUrlMovieGenre = "\(baseUrlGenre)movie/"
+    static let baseUrlTvShowGenre = "\(baseUrlGenre)tv/"
     static let baseUrlSearch = "\(baseUrl)search/"
+    static let baseUrlDiscover = "\(baseUrl)discover/"
     
     static let imageBaseUrl = "https://image.tmdb.org/t/p/w600/"
 }
