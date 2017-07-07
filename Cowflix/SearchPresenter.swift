@@ -29,7 +29,7 @@ extension SearchPresenter: SearchInteractorOutputProtocol {
     
     func didRetrieveMovies(_ movies: [Movie]) {
         view?.reloadMovieInterface(with: movies.map() {
-            return MovieViewModel(id: $0.id, title: $0.title, imagePath: $0.posterPath, image: nil)
+            return MovieViewModel(id: Int($0.apiId), title: $0.title, imagePath: $0.imagePath ?? "", image: nil)
         })
     }
     

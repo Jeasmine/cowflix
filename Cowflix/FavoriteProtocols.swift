@@ -27,6 +27,10 @@ protocol FavoriteInteractorInputProtocol: class {
 }
 
 protocol FavoriteDataManagerInputProtocol: class {
+    
+    func createFavorite(movie: Movie) throws -> Bool
+    
+    func retrieveFavoriteList() throws -> [Movie]
 }
 
 protocol FavoriteLocalDataManagerInputProtocol: class {

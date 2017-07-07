@@ -23,6 +23,7 @@
 		808044801F0EC90E00D9EC92 /* TvShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8080447F1F0EC90E00D9EC92 /* TvShow.swift */; };
 		808044821F0ECBBB00D9EC92 /* TvShowResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808044811F0ECBBB00D9EC92 /* TvShowResult.swift */; };
 		808044831F0EF07300D9EC92 /* Cowflix.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 80A43C6C1EF9E90F00C14F95 /* Cowflix.xcdatamodeld */; };
+		808044861F0EFC0600D9EC92 /* FavoriteLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808044851F0EFC0600D9EC92 /* FavoriteLocalDataManager.swift */; };
 		80A43C661EF9E90F00C14F95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A43C651EF9E90F00C14F95 /* AppDelegate.swift */; };
 		80A43C681EF9E90F00C14F95 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A43C671EF9E90F00C14F95 /* HomeView.swift */; };
 		80A43C6B1EF9E90F00C14F95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A43C691EF9E90F00C14F95 /* Main.storyboard */; };
@@ -65,6 +66,7 @@
 		805A76AA1F0C8DDF00CDEC85 /* SearchInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchInteractor.swift; sourceTree = "<group>"; };
 		8080447F1F0EC90E00D9EC92 /* TvShow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TvShow.swift; sourceTree = "<group>"; };
 		808044811F0ECBBB00D9EC92 /* TvShowResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TvShowResult.swift; sourceTree = "<group>"; };
+		808044851F0EFC0600D9EC92 /* FavoriteLocalDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteLocalDataManager.swift; sourceTree = "<group>"; };
 		80A43C621EF9E90F00C14F95 /* Cowflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cowflix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80A43C651EF9E90F00C14F95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80A43C671EF9E90F00C14F95 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -157,6 +159,14 @@
 			name = SearchManager;
 			sourceTree = "<group>";
 		};
+		808044841F0EFBA000D9EC92 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				808044851F0EFC0600D9EC92 /* FavoriteLocalDataManager.swift */,
+			);
+			name = Local;
+			sourceTree = "<group>";
+		};
 		80A43C591EF9E90F00C14F95 = {
 			isa = PBXGroup;
 			children = (
@@ -208,7 +218,6 @@
 			isa = PBXGroup;
 			children = (
 				80A43C6C1EF9E90F00C14F95 /* Cowflix.xcdatamodeld */,
-				80A43C871EF9FDC700C14F95 /* Repository */,
 				80A43C861EF9FDC100C14F95 /* DataManager */,
 				80A43C851EF9FD8400C14F95 /* Entities */,
 				80D610791EFE1ABA00013888 /* Constant.swift */,
@@ -234,16 +243,10 @@
 		80A43C861EF9FDC100C14F95 /* DataManager */ = {
 			isa = PBXGroup;
 			children = (
+				808044841F0EFBA000D9EC92 /* Local */,
 				80D77E1E1F00AF16003481E0 /* API */,
 			);
 			name = DataManager;
-			sourceTree = "<group>";
-		};
-		80A43C871EF9FDC700C14F95 /* Repository */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Repository;
 			sourceTree = "<group>";
 		};
 		80A43C881EF9FDD700C14F95 /* Interactor */ = {
@@ -528,6 +531,7 @@
 				8034626F1F05EEC700E64969 /* DetailInteractor.swift in Sources */,
 				808044821F0ECBBB00D9EC92 /* TvShowResult.swift in Sources */,
 				804A26EE1F09C7B7001EDF2A /* Language.swift in Sources */,
+				808044861F0EFC0600D9EC92 /* FavoriteLocalDataManager.swift in Sources */,
 				80D610781EFCA5E100013888 /* SearchProtocol.swift in Sources */,
 				80A43C681EF9E90F00C14F95 /* HomeView.swift in Sources */,
 				804A26E91F09B234001EDF2A /* DetailDataManager.swift in Sources */,
