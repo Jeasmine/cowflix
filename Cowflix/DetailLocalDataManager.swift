@@ -17,4 +17,21 @@ class DetailLocalDataManager: DetailLocalDataManagerInputProtocol {
         }
         throw PersistenceError.couldNotCreateObject
     }
+    
+    func findFavorite(apiId: Int) throws -> Bool {
+        guard let context = CoreDataPersistent.managedObjectContext else {
+            throw PersistenceError.managedObjectContextNotFound
+        }
+        let predicate = NSPredicate(format: "apiId == \(Int32(apiId))")
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Movie")
+        request.predicate = predicate
+        
+        var result = false
+        do {
+            let entityList = try context.fetch(request)
+            result = entityList.count > 0
+        } catch {
+        }
+        return result
+    }
 }

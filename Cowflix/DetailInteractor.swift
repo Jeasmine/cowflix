@@ -21,7 +21,16 @@ class DetailInteractor: DetailInteractorInputProtocol {
             let tryResult = try localDataManager?.createFavorite(movie: movie)
             result = tryResult ?? false
         } catch {
-            
+        }
+        return result
+    }
+    
+    func findFavorite(id: Int) -> Bool {
+        var result = false
+        do {
+            let tryResult = try localDataManager?.findFavorite(apiId: id)
+            result = tryResult ?? false
+        } catch {
         }
         return result
     }

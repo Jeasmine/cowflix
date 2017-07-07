@@ -149,6 +149,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="favorite" destination="xXh-9v-wAI" id="mD4-mT-XQ7"/>
                         <outlet property="genre" destination="IWi-Cq-HGf" id="9fw-bG-LuH"/>
                         <outlet property="image" destination="dQA-rC-yzf" id="zb4-Ic-xWG"/>
                         <outlet property="movieDescription" destination="u08-Ko-w8n" id="Jxy-Kp-dIm"/>

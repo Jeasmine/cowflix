@@ -19,8 +19,17 @@ class DetailPresenter: DetailPresenterProtocol {
     }
     
     func saveFavorite(movie: MovieViewModel) {
-        let result = interactor?.saveFavorite(movie: movie) ?? false
-        print(result)
+        showFavoriteIcon(show: interactor?.saveFavorite(movie: movie) ?? false)
+    }
+    
+    func findFavorite(id: Int) {
+        showFavoriteIcon(show: interactor?.findFavorite(id: id) ?? false)
+    }
+    
+    func showFavoriteIcon(show: Bool){
+        if(show) {
+            view?.showFavoriteIcon()
+        }
     }
 }
 

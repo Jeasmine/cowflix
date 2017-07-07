@@ -10,6 +10,8 @@ protocol DetailViewProtocol: class {
     var presenter: DetailPresenterProtocol? { get set }
     
     func reloadInterface(with detail: MovieDetailViewModel)
+    
+    func showFavoriteIcon()
 }
 
 protocol DetailPresenterProtocol: class {
@@ -23,6 +25,8 @@ protocol DetailPresenterProtocol: class {
     func loadDetail(with movieId: Int)
     
     func saveFavorite(movie: MovieViewModel)
+    
+    func findFavorite(id: Int)
 }
 
 protocol DetailInteractorOutputProtocol: class {
@@ -37,6 +41,8 @@ protocol DetailInteractorInputProtocol: class {
     func retrieveDetail(movieId: Int)
     
     func saveFavorite(movie: MovieViewModel) -> Bool
+    
+    func findFavorite(id: Int) -> Bool
 }
 
 protocol DetailDataManagerInputProtocol: class {
@@ -47,5 +53,7 @@ protocol DetailDataManagerInputProtocol: class {
 protocol DetailLocalDataManagerInputProtocol: class {
     
     func createFavorite(movie: MovieViewModel) throws -> Bool
+    
+    func findFavorite(apiId: Int) throws -> Bool
 }
 

@@ -6,6 +6,7 @@ class DetailView: UIViewController {
     @IBOutlet weak var movieName: UILabel!
     @IBOutlet weak var movieDescription: UILabel!
     @IBOutlet weak var genre: UILabel!
+    @IBOutlet weak var favorite: UIBarButtonItem!
     
     var movie: MovieViewModel? = nil
     var presenter: DetailPresenterProtocol?
@@ -15,6 +16,7 @@ class DetailView: UIViewController {
         if let viewModel = movie {
             image.image = viewModel.image ?? UIImage(named: "image_placeholder")!
             presenter?.loadDetail(with: viewModel.id)
+            presenter?.findFavorite(id: viewModel.id)
         }
     }
     
@@ -33,5 +35,9 @@ extension DetailView: DetailViewProtocol {
     
     func reloadInterface(with detail: MovieDetailViewModel) {
         movieName.text = detail.title
+    }
+    
+    func showFavoriteIcon() {
+        favorite.image = UIImage(named: "favorite")!
     }
 }
