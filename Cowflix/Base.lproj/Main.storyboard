@@ -77,10 +77,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dQA-rC-yzf">
-                                <rect key="frame" x="0.0" y="64" width="169" height="281.5"/>
+                                <rect key="frame" x="0.0" y="64" width="187.5" height="281.5"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1NH-Qe-rlu">
-                                <rect key="frame" x="177" y="72" width="190" height="24"/>
+                                <rect key="frame" x="195.5" y="72" width="171.5" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="pN3-RM-GQt"/>
                                 </constraints>
@@ -98,7 +98,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IWi-Cq-HGf">
-                                <rect key="frame" x="177" y="134" width="178" height="26"/>
+                                <rect key="frame" x="195.5" y="134" width="159.5" height="26"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="26" id="Uwg-dc-wqs"/>
                                 </constraints>
@@ -107,7 +107,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genre: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWS-LH-e1q">
-                                <rect key="frame" x="177" y="102" width="178" height="26"/>
+                                <rect key="frame" x="195.5" y="102" width="159.5" height="26"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="26" id="JHg-6m-juK"/>
                                 </constraints>
@@ -130,7 +130,7 @@
                             <constraint firstItem="pWS-LH-e1q" firstAttribute="leading" secondItem="dQA-rC-yzf" secondAttribute="trailing" constant="8" symbolic="YES" id="bWe-6O-aBs"/>
                             <constraint firstItem="IWi-Cq-HGf" firstAttribute="leading" secondItem="dQA-rC-yzf" secondAttribute="trailing" constant="8" symbolic="YES" id="ghA-rH-XLS"/>
                             <constraint firstAttribute="trailing" secondItem="IWi-Cq-HGf" secondAttribute="trailing" constant="20" symbolic="YES" id="iWa-qD-Epj"/>
-                            <constraint firstItem="dQA-rC-yzf" firstAttribute="width" secondItem="UDt-9P-IA5" secondAttribute="width" multiplier="0.45" id="mdZ-S2-Q7Y"/>
+                            <constraint firstItem="dQA-rC-yzf" firstAttribute="width" secondItem="UDt-9P-IA5" secondAttribute="width" multiplier="0.5" id="mdZ-S2-Q7Y"/>
                             <constraint firstAttribute="trailing" secondItem="pWS-LH-e1q" secondAttribute="trailing" constant="20" symbolic="YES" id="qsc-Yi-J0f"/>
                             <constraint firstItem="IWi-Cq-HGf" firstAttribute="top" secondItem="pWS-LH-e1q" secondAttribute="bottom" constant="6" id="wTt-9K-oac"/>
                             <constraint firstItem="dQA-rC-yzf" firstAttribute="height" secondItem="UDt-9P-IA5" secondAttribute="width" multiplier="0.75" id="yWq-Y9-iWD"/>

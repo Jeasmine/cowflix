@@ -23,6 +23,8 @@ class RandomView: FormViewController {
             })
             if (values.count > 0){
                 presenter?.search(from: self, with: values, type: getSegmentType())
+            } else {
+                MessageBuilder.showWarningMessage(titleMessage: "Selection needed", bodyMessage: "You must select at least one")
             }
         }
     }
