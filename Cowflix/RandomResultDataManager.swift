@@ -17,9 +17,6 @@ class RandomResultDataManager: RandomResultDataManagerInputProtocol {
                      parameters: ["api_key": APIConstants.key, "language": "en-US", "sort_by": "popularity.desc",
                                   "include_adult": "false", "include_video": "false", "page": 1, "with_genres": genres])
             .responseObject { (response: DataResponse<MovieResult>) in
-                print("Request: \(String(describing: response.request))")   // original url request
-                print("Response: \(String(describing: response.response))") // http url response
-                print("Result: \(response.result)")
                 completationHandler(response)
         }
     }

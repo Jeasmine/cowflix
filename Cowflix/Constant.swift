@@ -24,3 +24,11 @@ enum PersistenceError: Error {
     case couldNotCreateObject
     case objectNotFound
 }
+
+func mapToString(list: [String]) -> String {
+    return mapToString(list: list, separator: ",")
+}
+
+func mapToString(list: [String], separator: String) -> String {
+    return list.joined(separator: separator)
+}

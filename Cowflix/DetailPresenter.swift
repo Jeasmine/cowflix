@@ -34,8 +34,8 @@ class DetailPresenter: DetailPresenterProtocol {
 }
 
 extension DetailPresenter: DetailInteractorOutputProtocol {
-
+    
     func didRetrieveDetail(_ movie: MovieDetail) {
-        view?.reloadInterface(with: MovieDetailViewModel(title: movie.title))
+        view?.reloadInterface(with: MovieDetailViewModel(title: movie.title, genres: mapToString(list: movie.genres.map { return $0.name }, separator: ", " )))
     }
 }

@@ -14,9 +14,12 @@ class DetailView: UIViewController {
     override func viewDidLoad() {
         self.navigationItem.leftItemsSupplementBackButton = true
         if let viewModel = movie {
-            image.image = viewModel.image ?? UIImage(named: "image_placeholder")!
             presenter?.loadDetail(with: viewModel.id)
             presenter?.findFavorite(id: viewModel.id)
+            
+            image.image = viewModel.image ?? UIImage(named: "image_placeholder")!
+            movieDescription.text = viewModel.overview
+            movieName.text = viewModel.title
         }
     }
     
@@ -34,7 +37,7 @@ class DetailView: UIViewController {
 extension DetailView: DetailViewProtocol {
     
     func reloadInterface(with detail: MovieDetailViewModel) {
-        movieName.text = detail.title
+        genre.text = detail.genres
     }
     
     func showFavoriteIcon() {

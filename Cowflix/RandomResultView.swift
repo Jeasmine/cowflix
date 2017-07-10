@@ -19,6 +19,10 @@ class RandomResultView: UIViewController {
         presenter?.search(from: self, with: genres, type: type)
         collectionView.register(UINib(nibName: nibFileName, bundle: nil), forCellWithReuseIdentifier: reuseIdentifier)
     }
+    
+    @IBAction func didClickOnBackButton(_ sender: UIBarButtonItem) {
+         presenter?.backAction()
+    }
 }
 
 extension RandomResultView: RandomResultViewProtocol {

@@ -5,6 +5,8 @@ protocol RandomResultWireFrameProtocol: class {
     static func createRandomResultModule(genres: [String], type: MovieType) -> UIViewController
     
     func presentDetailScreen(from view: RandomResultViewProtocol, with movie: MovieViewModel)
+    
+    func dismissDetailInterface(from view: RandomResultViewProtocol)
 }
 
 protocol RandomResultViewProtocol: class {
@@ -17,6 +19,8 @@ protocol RandomResultPresenterProtocol: class {
     var view: RandomResultViewProtocol? { get set }
     var interactor: RandomResultInteractorInputProtocol? { get set }
     var wireFrame: RandomResultWireFrameProtocol? { get set }
+    
+    func backAction()
     
     func search(from view: RandomResultViewProtocol, with genres: [String], type: MovieType)
     

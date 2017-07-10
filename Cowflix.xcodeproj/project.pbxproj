@@ -41,6 +41,7 @@
 		808044B11F10228900D9EC92 /* RandomResultProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808044B01F10228900D9EC92 /* RandomResultProtocols.swift */; };
 		808044B51F10277400D9EC92 /* RandomResultDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808044B41F10277400D9EC92 /* RandomResultDataManager.swift */; };
 		808044B81F102B2800D9EC92 /* RandomResultInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808044B71F102B2800D9EC92 /* RandomResultInteractor.swift */; };
+		808044BB1F1424D600D9EC92 /* MessageBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808044BA1F1424D600D9EC92 /* MessageBuilder.swift */; };
 		80A43C661EF9E90F00C14F95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A43C651EF9E90F00C14F95 /* AppDelegate.swift */; };
 		80A43C681EF9E90F00C14F95 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A43C671EF9E90F00C14F95 /* HomeView.swift */; };
 		80A43C6B1EF9E90F00C14F95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A43C691EF9E90F00C14F95 /* Main.storyboard */; };
@@ -103,6 +104,7 @@
 		808044B01F10228900D9EC92 /* RandomResultProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomResultProtocols.swift; sourceTree = "<group>"; };
 		808044B41F10277400D9EC92 /* RandomResultDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomResultDataManager.swift; sourceTree = "<group>"; };
 		808044B71F102B2800D9EC92 /* RandomResultInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomResultInteractor.swift; sourceTree = "<group>"; };
+		808044BA1F1424D600D9EC92 /* MessageBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageBuilder.swift; sourceTree = "<group>"; };
 		80A43C621EF9E90F00C14F95 /* Cowflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cowflix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80A43C651EF9E90F00C14F95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80A43C671EF9E90F00C14F95 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -333,6 +335,14 @@
 			name = RandomResultManager;
 			sourceTree = "<group>";
 		};
+		808044B91F1424C500D9EC92 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				808044BA1F1424D600D9EC92 /* MessageBuilder.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 		80A43C591EF9E90F00C14F95 = {
 			isa = PBXGroup;
 			children = (
@@ -354,6 +364,7 @@
 		80A43C641EF9E90F00C14F95 /* Cowflix */ = {
 			isa = PBXGroup;
 			children = (
+				808044B91F1424C500D9EC92 /* Utils */,
 				80A43C841EF9FD7D00C14F95 /* Data */,
 				80A43C881EF9FDD700C14F95 /* Interactor */,
 				80B87C201F0323560093E385 /* Views */,
@@ -732,6 +743,7 @@
 				8034626B1F05E39E00E64969 /* DetailProtocols.swift in Sources */,
 				808044B11F10228900D9EC92 /* RandomResultProtocols.swift in Sources */,
 				808044AF1F10227E00D9EC92 /* RandomResultPresenter.swift in Sources */,
+				808044BB1F1424D600D9EC92 /* MessageBuilder.swift in Sources */,
 				8DAC67F31F12F3CC0014B5A6 /* FavoriteInteractor.swift in Sources */,
 				80A43C661EF9E90F00C14F95 /* AppDelegate.swift in Sources */,
 				80D610741EFCA57300013888 /* SearchView.swift in Sources */,

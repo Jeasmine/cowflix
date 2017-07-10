@@ -33,4 +33,10 @@ class RandomResultWireFrame: RandomResultWireFrameProtocol {
             sourceView.present(module, animated: true, completion: nil)
         }
     }
+    
+    func dismissDetailInterface(from view: RandomResultViewProtocol) {
+        if let view = view as? UIViewController {
+            view.dismiss(animated: true) {}
+        }
+    }
 }

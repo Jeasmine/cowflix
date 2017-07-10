@@ -6,6 +6,12 @@ class RandomResultPresenter: RandomResultPresenterProtocol {
     var interactor: RandomResultInteractorInputProtocol?
     var wireFrame: RandomResultWireFrameProtocol?
     
+    func backAction() {
+        if let view = view {
+            wireFrame?.dismissDetailInterface(from: view)
+        }
+    }
+    
     func search(from view: RandomResultViewProtocol, with genres: [String], type: MovieType) {
         switch type {
         case .tvshow:
@@ -13,10 +19,6 @@ class RandomResultPresenter: RandomResultPresenterProtocol {
         default:
             interactor?.retrieveMovies(with: mapToString(list: genres))
         }
-    }
-    
-    func mapToString(list: [String]) -> String {
-        return list.joined(separator: ",")
     }
     
     func detail(from view: RandomResultViewProtocol, with movie: MovieViewModel) {

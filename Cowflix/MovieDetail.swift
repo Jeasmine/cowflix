@@ -6,7 +6,7 @@ class MovieDetail: Mappable {
     var backdropPath = ""
     var belongsToCollection = ""
     var budge = 0
-    var genres: [IdName]?
+    var genres: [IdName] = []
     var homepage = ""
     var id = 0
     var imdbId = ""
@@ -65,4 +65,5 @@ class MovieDetail: Mappable {
 
 public struct MovieDetailViewModel {
     var title = ""
+    var genres = ""
 }
