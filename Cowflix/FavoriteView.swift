@@ -16,27 +16,23 @@ class FavoriteView: UIViewController {
     let reuseIdentifier = "movieCustomCell"
     
     @IBAction func movieSerieSwitch(_ sender: UISegmentedControl) {
-    // Si toco el switch debo cambiar la collection que muestro
-        
         print(favoriteSwitch.titleForSegment(at: favoriteSwitch.selectedSegmentIndex)!)
+        collectionView.reloadData()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter?.viewDidLoad()
-        print("PASE POR ACA")
         collectionView.register(UINib(nibName: nibFileName, bundle: nil), forCellWithReuseIdentifier: reuseIdentifier)
     }
 }
 
 extension FavoriteView: FavoriteViewProtocol {
-    func reloadInterface(with movies: [MovieViewModel]){
-        print("Y POR ACA TAMBIEN")
-        print(movies)
+    func reloadInterface(movies: [MovieViewModel], series: [MovieViewModel]){
         favoriteMovies = movies
+        favoriteSeries = series
         collectionView.reloadData()
     }
-    
 }
 
 extension FavoriteView: UICollectionViewDataSource {
@@ -44,18 +40,18 @@ extension FavoriteView: UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
-
-//    func collectionView(_ collectionView: UICollectionView,
-//                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//    
-//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "movieCustomCell",
-//                                                    for: indexPath)
-//        return cell
-//    }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        var moviesToShow: [MovieViewModel] = []
+        
+        if favoriteSwitch.selectedSegmentIndex == 0 {
+            moviesToShow = favoriteMovies
+        } else {
+            moviesToShow = favoriteSeries
+        }
+        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! MovieCustomCell
-        let movie = favoriteMovies[indexPath.row]
+        let movie = moviesToShow[indexPath.row]
         if let image = movie.image {
             cell.movieImage.image = image
         } else {
@@ -64,7 +60,7 @@ extension FavoriteView: UICollectionViewDataSource {
             
             cell.movieImage.af_setImage(withURL: url, placeholderImage: placeholderImage, completion: { data in
                 if let image = data.value {
-                    self.favoriteMovies[indexPath.row].image = image
+                    moviesToShow[indexPath.row].image = image
                 }
             })
         }
@@ -84,8 +80,7 @@ extension FavoriteView: UICollectionViewDataSource {
 
 extension FavoriteView: UICollectionViewDelegate {
 
-    func collectionView(_ collectionView: UICollectionView,
-                        didSelectItemAt indexPath: IndexPath){
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         var list: [MovieViewModel] = []
         if (favoriteSwitch.selectedSegmentIndex == 0) {

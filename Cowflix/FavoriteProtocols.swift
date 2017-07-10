@@ -9,7 +9,7 @@ protocol FavoriteWireFrameProtocol: class {
 protocol FavoriteViewProtocol: class {
     var presenter: FavoritePresenterProtocol? { get set }
     
-    func reloadInterface(with movies: [MovieViewModel])
+    func reloadInterface(movies: [MovieViewModel],series: [MovieViewModel])
 }
 
 protocol FavoritePresenterProtocol: class {

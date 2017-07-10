@@ -9,9 +9,11 @@ class FavoriteWireFrame: FavoriteWireFrameProtocol {
             let presenter = FavoritePresenter()
             let interactor = FavoriteInteractor()
             let dataManager = FavoriteLocalDataManager()
+            let wireFrame = FavoriteWireFrame()
             
             view.presenter = presenter
             presenter.view = view
+            presenter.wireFrame = wireFrame
             presenter.interactor = interactor
             interactor.presenter = presenter
             interactor.localDatamanager = dataManager

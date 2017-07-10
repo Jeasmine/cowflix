@@ -8,8 +8,11 @@ class TabbarWireFrame {
             let moduleTwo = FavoriteWireFrame.createFavoriteModule()
             let moduleThree = RandomWireFrame.createRandomModule()
             
+            moduleOne.tabBarItem.image = UIImage(named: "home_icon")
             moduleOne.tabBarItem.title = "Home"
-            moduleTwo.tabBarItem.title = "⭐️"
+            moduleTwo.tabBarItem.image = UIImage(named: "favorite")
+            moduleTwo.tabBarItem.title = "Favorites"
+            moduleThree.tabBarItem.image = UIImage(named: "movie_filter")
             moduleThree.tabBarItem.title = "Random"
             
             tabbbarController.viewControllers = [moduleOne, moduleTwo, moduleThree]

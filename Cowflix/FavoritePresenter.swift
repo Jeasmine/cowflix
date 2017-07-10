@@ -7,20 +7,29 @@ class FavoritePresenter: FavoritePresenterProtocol {
     var movies: [MovieEntity] = []
     
     func viewDidLoad(){
-        print("view did load presenter")
         interactor?.retrieveMovies()
     }
     
     func detail(from view: FavoriteViewProtocol, with movie: MovieViewModel){
+        wireFrame?.presentDetailScreen(from: view, with: movie)
     }
 }
 
 extension FavoritePresenter: FavoriteInteractorOutputProtocol {
     
     func didRetrieveMovies(_ movies: [MovieEntity]) {
-        print("a ver si paso por el presenter")
-        view?.reloadInterface(with: movies.map() {
-            return MovieViewModel(id: Int($0.apiId), type: .movie, title: $0.title, imagePath: $0.imagePath, overview: $0.synopsis, image: nil)
-        })
+        
+        var favoriteMovie: [MovieViewModel] = []
+        var favoriteSerie: [MovieViewModel] = []
+
+        movies.forEach{ movie in
+            if movie.type == 0 {
+                favoriteMovie.append(MovieViewModel(id: Int(movie.apiId), type: .movie, title: movie.title, imagePath: movie.imagePath, overview: movie.synopsis, image: nil))
+            } else {
+                favoriteSerie.append(MovieViewModel(id: Int(movie.apiId), type: .movie, title: movie.title, imagePath: movie.imagePath, overview: movie.synopsis, image: nil))
+            }
+        }
+        
+        view?.reloadInterface(movies: favoriteMovie, series: favoriteSerie)
     }
 }
