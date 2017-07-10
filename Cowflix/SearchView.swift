@@ -29,7 +29,7 @@ class SearchView: UIViewController {
     }
     
     @IBAction func onChangeCategory(_ sender: UISegmentedControl) {
-         collectionView.reloadData()
+        collectionView.reloadData()
     }
     
     func makeBackButton() {
@@ -46,6 +46,14 @@ class SearchView: UIViewController {
     
     func getMovie(position: Int) -> MovieViewModel {
         return getSegmentType() == MovieType.movie ? movieList[position] : tvShowList[position]
+    }
+    
+    func setImage(position: Int, image: UIImage) {
+        if (getSegmentType() == MovieType.movie) {
+            movieList[position].image = image
+        } else {
+            tvShowList[position].image = image
+        }
     }
 }
 
@@ -117,8 +125,7 @@ extension SearchView: UICollectionViewDataSource {
         
         cell.movieImage.af_setImage(withURL: url, placeholderImage: placeholderImage, completion: { data in
             if let image = data.value {
-                var movie = self.getMovie(position: indexPath.row)
-                movie.image = image
+                self.setImage(position: indexPath.row, image: image)
             }
         })
     }
