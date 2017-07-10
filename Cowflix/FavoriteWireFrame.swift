@@ -5,6 +5,18 @@ class FavoriteWireFrame: FavoriteWireFrameProtocol {
     static func createFavoriteModule() -> UIViewController {
         let navController = mainStoryboard.instantiateViewController(withIdentifier:"FavoritesNavigationController") as! UINavigationController
         navController.navigationBar.barTintColor = UIColor.gray
+        if let view = navController.childViewControllers.first as? FavoriteView {
+            let presenter = FavoritePresenter()
+            let interactor = FavoriteInteractor()
+            let dataManager = FavoriteLocalDataManager()
+            
+            view.presenter = presenter
+            presenter.view = view
+            presenter.interactor = interactor
+            interactor.presenter = presenter
+            interactor.localDatamanager = dataManager
+            return navController
+        }
         return navController
     }
     

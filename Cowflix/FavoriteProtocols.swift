@@ -8,6 +8,8 @@ protocol FavoriteWireFrameProtocol: class {
 
 protocol FavoriteViewProtocol: class {
     var presenter: FavoritePresenterProtocol? { get set }
+    
+    func reloadInterface(with movies: [MovieViewModel])
 }
 
 protocol FavoritePresenterProtocol: class {
@@ -19,11 +21,15 @@ protocol FavoritePresenterProtocol: class {
     func detail(from view: FavoriteViewProtocol, with movie: MovieViewModel)
 }
 
-protocol FavoriteInteractorOutputProtocol: class {}
+protocol FavoriteInteractorOutputProtocol: class {
+    func didRetrieveMovies(_ movies: [MovieEntity])
+}
 
 protocol FavoriteInteractorInputProtocol: class {
     var presenter: FavoriteInteractorOutputProtocol? { get set }
     var localDatamanager: FavoriteLocalDataManagerInputProtocol? { get set }
+    
+    func retrieveMovies()
 }
 
 protocol FavoriteLocalDataManagerInputProtocol: class {

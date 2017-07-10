@@ -63,6 +63,8 @@
 		80D6107C1F0074CA00013888 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D6107B1F0074CA00013888 /* Movie.swift */; };
 		80D610801F00841D00013888 /* MovieResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D6107F1F00841D00013888 /* MovieResult.swift */; };
 		80D77E1B1F00AE96003481E0 /* HomeDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D77E1A1F00AE96003481E0 /* HomeDataManager.swift */; };
+		8DAC67F11F118A900014B5A6 /* FavoritePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAC67F01F118A900014B5A6 /* FavoritePresenter.swift */; };
+		8DAC67F31F12F3CC0014B5A6 /* FavoriteInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAC67F21F12F3CC0014B5A6 /* FavoriteInteractor.swift */; };
 		A61F866887B3A1E101DA00DE /* Pods_Cowflix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B288CE51469C854589F032BC /* Pods_Cowflix.framework */; };
 /* End PBXBuildFile section */
 
@@ -126,6 +128,8 @@
 		80D6107B1F0074CA00013888 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		80D6107F1F00841D00013888 /* MovieResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieResult.swift; sourceTree = "<group>"; };
 		80D77E1A1F00AE96003481E0 /* HomeDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDataManager.swift; sourceTree = "<group>"; };
+		8DAC67F01F118A900014B5A6 /* FavoritePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritePresenter.swift; sourceTree = "<group>"; };
+		8DAC67F21F12F3CC0014B5A6 /* FavoriteInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteInteractor.swift; sourceTree = "<group>"; };
 		B288CE51469C854589F032BC /* Pods_Cowflix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cowflix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD48644E7940AF76019000A /* Pods-Cowflix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cowflix.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cowflix/Pods-Cowflix.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -415,6 +419,7 @@
 				808044B71F102B2800D9EC92 /* RandomResultInteractor.swift */,
 				8034626E1F05EEC700E64969 /* DetailInteractor.swift */,
 				805A76AA1F0C8DDF00CDEC85 /* SearchInteractor.swift */,
+				8DAC67F21F12F3CC0014B5A6 /* FavoriteInteractor.swift */,
 			);
 			name = Interactor;
 			sourceTree = "<group>";
@@ -458,6 +463,7 @@
 			children = (
 				80A43C9E1EFA12DC00C14F95 /* WireFrame */,
 				80A43C9D1EFA128E00C14F95 /* View */,
+				8DAC67EF1F118A5C0014B5A6 /* Presenter */,
 				80A43C9F1EFA12F200C14F95 /* FavoriteProtocols.swift */,
 			);
 			name = Favorites;
@@ -542,6 +548,14 @@
 				804A26EA1F09B238001EDF2A /* DetailDataManager */,
 			);
 			name = API;
+			sourceTree = "<group>";
+		};
+		8DAC67EF1F118A5C0014B5A6 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8DAC67F01F118A900014B5A6 /* FavoritePresenter.swift */,
+			);
+			name = Presenter;
 			sourceTree = "<group>";
 		};
 		AE583CC4DFCC8684F3987AC6 /* Frameworks */ = {
@@ -699,6 +713,7 @@
 				804A26EE1F09C7B7001EDF2A /* Language.swift in Sources */,
 				808044861F0EFC0600D9EC92 /* FavoriteLocalDataManager.swift in Sources */,
 				8080449A1F0FF3D800D9EC92 /* RandomWireFrame.swift in Sources */,
+				8DAC67F11F118A900014B5A6 /* FavoritePresenter.swift in Sources */,
 				80D610781EFCA5E100013888 /* SearchProtocol.swift in Sources */,
 				808044901F0F309A00D9EC92 /* MovieEntity.swift in Sources */,
 				80A43C681EF9E90F00C14F95 /* HomeView.swift in Sources */,
@@ -717,6 +732,7 @@
 				8034626B1F05E39E00E64969 /* DetailProtocols.swift in Sources */,
 				808044B11F10228900D9EC92 /* RandomResultProtocols.swift in Sources */,
 				808044AF1F10227E00D9EC92 /* RandomResultPresenter.swift in Sources */,
+				8DAC67F31F12F3CC0014B5A6 /* FavoriteInteractor.swift in Sources */,
 				80A43C661EF9E90F00C14F95 /* AppDelegate.swift in Sources */,
 				80D610741EFCA57300013888 /* SearchView.swift in Sources */,
 				808044A51F0FFCC800D9EC92 /* GenreResult.swift in Sources */,
