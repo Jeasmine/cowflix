@@ -27,6 +27,18 @@ class FavoriteView: UIViewController {
         presenter?.viewDidLoad()
         collectionView.reloadData()
     }
+    
+    func getSegmentType() -> MovieType {
+        return favoriteSwitch.selectedSegmentIndex == 0 ? MovieType.movie : MovieType.tvshow
+    }
+    
+    func setImage(position: Int, image: UIImage) {
+        if (getSegmentType() == MovieType.movie) {
+            favoriteMovies[position].image = image
+        } else {
+            favoriteSeries[position].image = image
+        }
+    }
 }
 
 extension FavoriteView: FavoriteViewProtocol {
@@ -62,7 +74,7 @@ extension FavoriteView: UICollectionViewDataSource {
             
             cell.movieImage.af_setImage(withURL: url, placeholderImage: placeholderImage, completion: { data in
                 if let image = data.value {
-                    moviesToShow[indexPath.row].image = image
+                    self.setImage(position: indexPath.row, image: image)
                 }
             })
         }
