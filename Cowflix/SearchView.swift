@@ -29,7 +29,15 @@ class SearchView: UIViewController {
     }
     
     @IBAction func onChangeCategory(_ sender: UISegmentedControl) {
-        collectionView.reloadData()
+        if let text = searchBar.text {
+            if (getSegmentType() == .tvshow && tvShowList.count == 0) {
+                presenter?.search(type: .tvshow, name: text)
+            } else {
+                presenter?.search(type: .movie, name: text)
+            }
+        } else {
+            collectionView.reloadData()
+        }
     }
     
     func makeBackButton() {
