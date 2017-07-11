@@ -50,7 +50,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Trending" id="TWF-Sf-DH5">
                         <barButtonItem key="rightBarButtonItem" systemItem="search" id="4fz-J0-M7X">
-                            <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="0.66890472170000004" green="0.28666955230000002" blue="0.47575068469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="onSearchClick:" destination="BYZ-38-t0r" id="9WI-Gn-7qo"/>
                             </connections>
@@ -138,13 +138,13 @@
                     </view>
                     <navigationItem key="navigationItem" title="Detail" id="Qnd-SN-dvH">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="QVR-5t-sPc">
-                            <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="0.66890472170000004" green="0.28666955230000002" blue="0.47575068469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="didClickOnBackButton:" destination="Kro-SG-iex" id="hxS-BM-7uw"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="no_favorite" id="xXh-9v-wAI">
-                            <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="0.66890472170000004" green="0.28666955230000002" blue="0.47575068469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="didClickFavoriteButton:" destination="Kro-SG-iex" id="Urx-Q3-lGm"/>
                             </connections>
@@ -198,7 +198,7 @@
                                     <segment title="Movie"/>
                                     <segment title="Tv Show"/>
                                 </segments>
-                                <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="onChangeCategory:" destination="U9r-P2-82B" eventType="valueChanged" id="y4d-Sn-Mq8"/>
                                 </connections>
@@ -263,7 +263,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Result" id="lD6-NL-PiF">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="p3N-xs-YTQ">
-                            <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="0.66890472170000004" green="0.28666955230000002" blue="0.47575068469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="didClickOnBackButton:" destination="G32-If-Rbs" id="k0b-Ge-eOX"/>
                             </connections>
@@ -328,7 +328,7 @@
                                     <segment title="Movies"/>
                                     <segment title="Series"/>
                                 </segments>
-                                <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="movieSerieSwitch:" destination="LV2-Jb-NsK" eventType="valueChanged" id="ZHg-i4-era"/>
                                 </connections>
@@ -380,7 +380,7 @@
                                     <segment title="Movie"/>
                                     <segment title="Serie"/>
                                 </segments>
-                                <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="onChangeCategory:" destination="AjL-ch-9oX" eventType="valueChanged" id="5oZ-Nn-V8X"/>
                                 </connections>
@@ -399,7 +399,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Random" id="kR6-xO-vdP">
                         <barButtonItem key="rightBarButtonItem" image="movie_filter" id="B2X-zf-LYY">
-                            <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="0.66890472170000004" green="0.28666955230000002" blue="0.47575068469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="onSearchClick:" destination="AjL-ch-9oX" id="igP-Zh-r9H"/>
                             </connections>
