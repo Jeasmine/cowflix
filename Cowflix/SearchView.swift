@@ -34,7 +34,7 @@ class SearchView: UIViewController {
     
     func makeBackButton() {
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.plain, target: self, action: #selector(didClickOnBackButton))
-        self.navigationItem.leftBarButtonItem?.tintColor = UIColor.orange
+        self.navigationItem.leftBarButtonItem?.tintColor = UIColor(colorLiteralRed:0.67, green:0.29, blue:0.47, alpha:1.0)
     }
     
     func didClickOnBackButton() {
@@ -78,7 +78,7 @@ extension SearchView: UISearchBarDelegate {
         
         self.navigationItem.hidesBackButton = true
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(title:nil, style:UIBarButtonItemStyle.plain, target:self, action:nil)
-        searchBar.tintColor = UIColor.orange
+        searchBar.tintColor = UIColor(colorLiteralRed:0.67, green:0.29, blue:0.47, alpha:1.0)
     }
     
     func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
