@@ -50,7 +50,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Trending" id="TWF-Sf-DH5">
                         <barButtonItem key="rightBarButtonItem" systemItem="search" id="4fz-J0-M7X">
-                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="onSearchClick:" destination="BYZ-38-t0r" id="9WI-Gn-7qo"/>
                             </connections>
@@ -138,11 +138,13 @@
                     </view>
                     <navigationItem key="navigationItem" title="Detail" id="Qnd-SN-dvH">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="QVR-5t-sPc">
+                            <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="didClickOnBackButton:" destination="Kro-SG-iex" id="hxS-BM-7uw"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="no_favorite" id="xXh-9v-wAI">
+                            <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="didClickFavoriteButton:" destination="Kro-SG-iex" id="Urx-Q3-lGm"/>
                             </connections>
@@ -196,12 +198,13 @@
                                     <segment title="Movie"/>
                                     <segment title="Tv Show"/>
                                 </segments>
+                                <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="onChangeCategory:" destination="U9r-P2-82B" eventType="valueChanged" id="y4d-Sn-Mq8"/>
                                 </connections>
                             </segmentedControl>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.66890472173690796" green="0.28666955232620239" blue="0.47575068473815918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Pia-M9-WTz" secondAttribute="trailing" constant="20" symbolic="YES" id="5vE-8e-JHp"/>
                             <constraint firstItem="Pia-M9-WTz" firstAttribute="leading" secondItem="ycg-Da-dHT" secondAttribute="leading" constant="20" symbolic="YES" id="JzA-y2-uHm"/>
@@ -251,10 +254,11 @@
                                 </connections>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.59999999999999998" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Result" id="lD6-NL-PiF">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="p3N-xs-YTQ">
+                            <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="didClickOnBackButton:" destination="G32-If-Rbs" id="k0b-Ge-eOX"/>
                             </connections>
@@ -319,12 +323,13 @@
                                     <segment title="Movies"/>
                                     <segment title="Series"/>
                                 </segments>
+                                <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="movieSerieSwitch:" destination="LV2-Jb-NsK" eventType="valueChanged" id="ZHg-i4-era"/>
                                 </connections>
                             </segmentedControl>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.59999999999999998" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="wan-p8-5jJ" secondAttribute="trailing" constant="20" symbolic="YES" id="5Gt-00-aDW"/>
                             <constraint firstItem="kA5-6k-e8e" firstAttribute="top" secondItem="bRK-Ju-5dz" secondAttribute="bottom" id="Cgy-zW-9ad"/>
@@ -370,12 +375,13 @@
                                     <segment title="Movie"/>
                                     <segment title="Serie"/>
                                 </segments>
+                                <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="onChangeCategory:" destination="AjL-ch-9oX" eventType="valueChanged" id="5oZ-Nn-V8X"/>
                                 </connections>
                             </segmentedControl>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.59999999999999998" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="pmn-if-a6c" firstAttribute="leading" secondItem="qj3-td-tZa" secondAttribute="leading" id="2m5-d1-E82"/>
                             <constraint firstItem="NKP-S6-zzv" firstAttribute="leading" secondItem="qj3-td-tZa" secondAttribute="leading" constant="20" symbolic="YES" id="BXH-ny-Sdh"/>
@@ -388,6 +394,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Random" id="kR6-xO-vdP">
                         <barButtonItem key="rightBarButtonItem" image="movie_filter" id="B2X-zf-LYY">
+                            <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="onSearchClick:" destination="AjL-ch-9oX" id="igP-Zh-r9H"/>
                             </connections>

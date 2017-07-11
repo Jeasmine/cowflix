@@ -4,7 +4,7 @@ class FavoriteWireFrame: FavoriteWireFrameProtocol {
     
     static func createFavoriteModule() -> UIViewController {
         let navController = mainStoryboard.instantiateViewController(withIdentifier:"FavoritesNavigationController") as! UINavigationController
-        navController.navigationBar.barTintColor = UIColor.gray
+
         if let view = navController.childViewControllers.first as? FavoriteView {
             let presenter = FavoritePresenter()
             let interactor = FavoriteInteractor()

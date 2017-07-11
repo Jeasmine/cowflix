@@ -3,7 +3,9 @@ import UIKit
 class DetailWireFrame: DetailWireFrameProtocol {
     
     static func createDetailModule(movie: MovieViewModel) -> UIViewController {
-        let navController = mainStoryboard.instantiateViewController(withIdentifier:"DetailNavigationController")
+        let navController = mainStoryboard.instantiateViewController(withIdentifier:"DetailNavigationController") as! UINavigationController
+        navController.navigationBar.barTintColor = UIColor(colorLiteralRed: 0.96, green: 0.81, blue: 0.89, alpha: 1.0)
+        
         if let view = navController.childViewControllers.first as? DetailView {
             let presenter = DetailPresenter()
             let interactor = DetailInteractor()
