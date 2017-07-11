@@ -3,7 +3,6 @@ import UIKit
 class FavoriteView: UIViewController {
     var presenter: FavoritePresenterProtocol?
     
-    
     fileprivate let sectionInsets = UIEdgeInsets(top: 20.0, left: 20.0, bottom: 20.0, right: 20.0)
     fileprivate let itemsPerRow: CGFloat = 2
     
@@ -16,7 +15,6 @@ class FavoriteView: UIViewController {
     let reuseIdentifier = "movieCustomCell"
     
     @IBAction func movieSerieSwitch(_ sender: UISegmentedControl) {
-        print(favoriteSwitch.titleForSegment(at: favoriteSwitch.selectedSegmentIndex)!)
         collectionView.reloadData()
     }
     
@@ -24,6 +22,12 @@ class FavoriteView: UIViewController {
         super.viewDidLoad()
         presenter?.viewDidLoad()
         collectionView.register(UINib(nibName: nibFileName, bundle: nil), forCellWithReuseIdentifier: reuseIdentifier)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        presenter?.viewDidLoad()
+        collectionView.reloadData()
     }
 }
 
