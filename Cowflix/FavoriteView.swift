@@ -19,8 +19,6 @@ class FavoriteView: UIViewController {
     }
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        presenter?.viewDidLoad()
         collectionView.register(UINib(nibName: nibFileName, bundle: nil), forCellWithReuseIdentifier: reuseIdentifier)
     }
     
