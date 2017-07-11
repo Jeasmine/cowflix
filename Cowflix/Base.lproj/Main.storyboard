@@ -198,7 +198,7 @@
                                     <segment title="Movie"/>
                                     <segment title="Tv Show"/>
                                 </segments>
-                                <color key="tintColor" red="1" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.96078431369999995" green="0.81176470590000005" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="onChangeCategory:" destination="U9r-P2-82B" eventType="valueChanged" id="y4d-Sn-Mq8"/>
                                 </connections>
@@ -328,7 +328,7 @@
                                     <segment title="Movies"/>
                                     <segment title="Series"/>
                                 </segments>
-                                <color key="tintColor" red="1" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.96078431369999995" green="0.81176470590000005" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="movieSerieSwitch:" destination="LV2-Jb-NsK" eventType="valueChanged" id="ZHg-i4-era"/>
                                 </connections>
@@ -380,7 +380,7 @@
                                     <segment title="Movie"/>
                                     <segment title="Serie"/>
                                 </segments>
-                                <color key="tintColor" red="1" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.96078431369999995" green="0.81176470590000005" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="onChangeCategory:" destination="AjL-ch-9oX" eventType="valueChanged" id="5oZ-Nn-V8X"/>
                                 </connections>

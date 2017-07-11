@@ -17,7 +17,7 @@ class TabbarWireFrame {
             
             tabbbarController.viewControllers = [moduleOne, moduleTwo, moduleThree]
             tabbbarController.tabBar.barStyle = .black
-            tabbbarController.tabBar.tintColor = UIColor.orange
+            tabbbarController.tabBar.tintColor = UIColor(colorLiteralRed:0.96, green:0.81, blue:0.89, alpha:1.0)
             return tabbbarController
         }
         return UITabBarController()
